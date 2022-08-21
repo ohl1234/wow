@@ -18,26 +18,6 @@
     .left-area{
         zoom: 1.08;
     }
-    .btn-menu,.btn-close{
-        display: inline-block;
-        height: 32px;
-    }
-    .bar-wrap{
-        display: inline-block;
-        width: 16px;
-        height: 10px;
-        margin-right: 10px;
-        vertical-align:middle;
-    }
-    .menu-bar{
-        display: block;
-        width: 16px;
-        height: 2px;
-        background-color: $color-white;
-        &:nth-child(1){
-            margin-bottom: 5px;
-        }
-    }
     .link-choose{
         margin-left: 32px;
     }
@@ -64,7 +44,6 @@
         transition-duration: 3s;
     }
 }
-
 .gnb-area{
     display: none;
     position: fixed;
@@ -77,26 +56,6 @@
     .gnb-header{
         position: static;
         color: $color-txt;
-    }
-    .btn-close{
-        .bar-wrap{
-            height: 15px;
-            margin-right: 3px;
-            vertical-align: -3px;
-        }
-        i{
-            display: inline-block;
-            width:2px;
-            height: 15px;
-            background-color: $color-txt;
-            &:nth-child(1){
-                margin-bottom: 0;
-            }
-        }
-    }
-    .btn-requset{
-        background-color: $color-txt;
-        color: $color-white;
     }
     .group-menu{
         display: flex;
@@ -250,6 +209,7 @@
         }
     }
 }
+
 .requset-area{
     display: none;
     position: fixed;
@@ -261,47 +221,6 @@
     z-index: 999;
     color: $color-txt;
     background-color: $color-beige1;
-    .btn-close{
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        cursor: pointer;
-        z-index: 999999;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .close-wrap{
-            position: relative;
-            width: 24px;
-            height: 20px;
-        }
-        .close-bar{
-            position: absolute;
-            top: 8px;
-            left: 0;
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: $color-dark;
-            opacity: 1;
-            &:nth-of-type(1){
-                -webkit-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -o-transform: rotate(45deg);
-                transform: rotate(45deg);
-            }
-            &:last-of-type{
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-                -o-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-            }
-        }
-    }
-    .form-wrap{
-    }
     .area-title{
         margin-bottom: 30px;
         font-size: 40px;
@@ -327,8 +246,6 @@
         align-items: center;
         border-bottom: 1px solid $color-gray2;
     }
-    .select-box{
-    }
     .selection{
         display: flex;
         -ms-flex-align: center;
@@ -352,6 +269,7 @@
         box-shadow: 0 0 5px rgb(0 0 0 / 30%);
     }
     .select-option{
+        display: none;
         position: absolute;
         top: calc(100% + 5px);
         width: 100%;
@@ -359,7 +277,7 @@
         max-height: 200px;
         padding-top: 5px;
         padding-bottom: 5px;
-        background-color: $color-beige1;
+        background-color: $color-white;
         border: 1px solid $color-gray5;
         border-radius: 7px;
         -webkit-box-shadow: 0 0 1px rgb(0 0 0 / 10%);
@@ -418,17 +336,6 @@
     }
     .input-name{
         border-bottom: 1px solid $color-gray2;
-    }
-    .btn-send{
-        display: block;
-        width: 100%;
-        height: 44px;
-        margin: 30px 0 10px;
-        padding: 0 15px;
-        background-color: $color-brown;
-        border-radius: 400px;
-        font-size: 14px;
-        color: $color-white;
     }
     .txt{
         color: $color-gray1;
