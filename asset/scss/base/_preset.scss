@@ -6,3 +6,10 @@
     overflow: hidden;
     margin: -1px;
 }
+section{
+    width: 100%;
+    & + section{
+        width: 100%;
+        padding: 0 40px;
+    }
+}
