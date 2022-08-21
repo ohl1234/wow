@@ -237,7 +237,7 @@ input, select, button, fieldset {
   align-items: center;
   margin: 12px 32px;
   line-height: 17px;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
 }
 .header .logo-area, .gnb-header .logo-area {
@@ -567,7 +567,7 @@ input, select, button, fieldset {
   max-height: 200px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #fff;
+  background-color: #ecebe4;
   border: 1px solid #eee;
   border-radius: 7px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);

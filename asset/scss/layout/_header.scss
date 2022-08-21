@@ -5,7 +5,7 @@
     align-items: center;
     margin: 12px 32px;
     line-height: 17px;
-    color: #ffffff;
+    color: $color-white;
     font-size: 14px;
     .logo-area{
         @include position-Center;
@@ -29,7 +29,7 @@
         display: block;
         width: 16px;
         height: 2px;
-        background-color: #fff;
+        background-color: $color-white;
         &:nth-child(1){
             margin-bottom: 5px;
         }
@@ -43,7 +43,7 @@
         left: 0;
         width: 100%;
         z-index: 1000;
-        background-color: #ecebe4;
+        background-color: $color-beige1;
     }
     .right-area{
         zoom: 1.08;
@@ -55,11 +55,11 @@
     .btn-requset{
         width: 140px;
         height: 32px;
-        color: #434e60;
+        color: $color-blue;
         font-size: 12px;
         font-weight: 500;
         border-radius: 30px;
-        background-color: #eaeef3;
+        background-color: $color-beige2;
         background-position: center center;
         border-color: transparent;
         border-style: solid;
@@ -93,7 +93,7 @@
     }
     .btn-requset{
         background-color: $color-txt;
-        color: #fff;
+        color: $color-white;
     }
     .group-menu{
         display: flex;
@@ -257,7 +257,7 @@
     padding: 45px;
     z-index: 999;
     color: $color-txt;
-    background-color: #ecebe4;
+    background-color: $color-beige1;
     .btn-close{
         position: absolute;
         top: 5px;
@@ -281,7 +281,7 @@
             display: block;
             width: 100%;
             height: 2px;
-            background-color: #000;
+            background-color: $color-dark;
             opacity: 1;
             &:nth-of-type(1){
                 -webkit-transform: rotate(45deg);
@@ -344,7 +344,7 @@
         height: 13px;
         @include flag-Img;
         background-position: -285px -281px;
-        background-color: #c5c5c5;
+        background-color: $color-gray3;
         -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
         box-shadow: 0 0 5px rgb(0 0 0 / 30%);
     }
@@ -356,8 +356,8 @@
         max-height: 200px;
         padding-top: 5px;
         padding-bottom: 5px;
-        background-color: #fff;
-        border: 1px solid #eee;
+        background-color: $color-beige1;
+        border: 1px solid $color-gray5;
         border-radius: 7px;
         -webkit-box-shadow: 0 0 1px rgb(0 0 0 / 10%);
         box-shadow: 0 0 1px rgb(0 0 0 / 10%);
@@ -371,7 +371,7 @@
         padding: 10px;
         width: 100%;
         &:hover{
-            background-color: #eee;
+            background-color: $color-gray5;
         }
         .canada{
             background-position: -145px -51px;
@@ -399,7 +399,7 @@
         margin-left: 6px;
         border-style: solid;
         border-width: 5px 4px 0;
-        border-color: #9a9a9a transparent transparent;
+        border-color: $color-gray4 transparent transparent;
     }
     .select-code{
         margin-left: 10px;
@@ -422,10 +422,10 @@
         height: 44px;
         margin: 30px 0 10px;
         padding: 0 15px;
-        background-color: #605348;
+        background-color: $color-brown;
         border-radius: 400px;
         font-size: 14px;
-        color:#fff;
+        color: $color-white;
     }
     .txt{
         color: $color-gray1;
