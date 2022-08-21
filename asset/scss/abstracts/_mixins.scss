@@ -19,3 +19,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin flag-Img {
+    background-image: url(../images/sc-flag-bg.png);
+    background-repeat: no-repeat;
+}
