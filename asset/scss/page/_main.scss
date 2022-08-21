@@ -46,15 +46,15 @@
         margin-bottom: 110px;
     }
     .column-left{
-        width: calc(100% - 830px);
+        width: calc(100% - 75%);
     }
     .column-right{
-        width: 830px;
+        width: 75%;
         .sub-title{
             display: block;
             margin-bottom: 30px;
             span{
-                display: inline-block;
+                display: block;
                 &:nth-of-type(1){
                 }
                 &:nth-of-type(2){
@@ -67,7 +67,7 @@
             font-size: 20px;
             line-height: 26px;
             font-weight: 300;
-            zoom: 1.08;
+            zoom: 1.34;
             span{
                 display: block;
                 & + span{
@@ -105,7 +105,7 @@
             font-weight: 300;
             font-size: 18px;
             line-height: 24px;
-            zoom: 1.08;
+            zoom: 1.34;
             span{
                 display: block;
                 width: 406px;
@@ -116,4 +116,298 @@
         }
     }
 
+}
+
+.sc-location{
+    .group-flex3{
+        display: flex;
+        justify-content: space-between;
+        .column-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .station-box{
+            display: flex;
+            align-items: center;
+            &::before{
+                content: '';
+                display: inline-block;
+                vertical-align: top;
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+                background-image: url(../images/metro.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+            }
+            & > *{
+                display: block;
+                zoom: 1.34;
+            }
+            .txt-wrap{
+                display: flex;
+                flex-direction: column;
+            }
+            em{
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: uppercase;
+                padding-bottom: 4px;
+            }
+            span{
+                line-height: 17px;
+                opacity: 0.8;
+            }
+        }
+        .sub-title{
+            display: inline-block;
+            text-align: right;
+            span{
+                display: block;
+            }
+        }
+    }
+    .group-flex4{
+        display: flex;
+        margin-top: 64px;
+        zoom:1.34;
+        .column-left{
+            width: 55%;
+            padding-right: 30px;
+            border-right: 1px solid $color-gray2;
+        }
+        .location-list{}
+        .location-item{
+            display: flex;
+            justify-content: space-between;
+            & + li{
+                margin-top: 30px;
+            }
+        }
+        .txt-box{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .info{
+            & > *{
+                display: block;
+            }
+        }
+        .info-tit{
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 8px;
+        }
+        .info-txt{
+            line-height: 17px;
+            opacity: 0.8;
+        }
+        .time{
+            align-self: flex-end;
+            font-size: 16px;
+            line-height: 19px;
+            i{
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        .ic-walk{
+            background-image: url(../images/walk.svg);
+        }
+        .ic-car{
+            background-image: url(../images/car.svg);
+        }
+        .thumb-box{
+            width: 180px;
+            height: 104px;
+            background-image: url(../images/location-thumb1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .map {
+            .thumb-box{
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: none;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .thumb2{
+            background-image: url(../images/location-thumb2.jpg);
+        }
+        .thumb3{
+            background-image: url(../images/location-thumb3.jpg);
+        }
+        .thumb4{
+            background-image: url(../images/location-thumb4.jpg);
+        }
+        .location-item{}
+        .column-right{
+            width: 45%;
+            padding-left: 30px;
+            .desc{
+                position: sticky;
+                top: 0;
+                width: 80%;
+                word-break: keep-all;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+    }
+    .group-flex5{
+        height: 224px;
+        margin-top: 140px;
+        background-color: $color-beige3;
+        zoom: 1.34;
+    }
+    .txt-box{
+        font-size: 40px;
+        line-height: 44px;
+        div{
+            &:last-of-type{
+                display: inline-block;
+            }
+        }
+        span{
+            display: inline-block;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 300;
+            span{
+                display: block;
+            }
+        }
+    }
+    .input-area{
+        display: flex;
+        height: 100%;
+        padding: 0 80px;
+        align-items: center;
+        & > div {
+            width: 50%;
+        }
+    }
+    .input-wrap{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .select-wrapper{
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $color-gray2;
+    }
+    .selection{
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-right: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .select-flag,.option-flag{
+        display: block;
+        width: 18px;
+        min-width: 18px;
+        height: 13px;
+        @include flag-Img;
+        background-position: -285px -281px;
+        background-color: $color-gray3;
+        -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+        box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    }
+    .select-option{
+        display: none;
+        position: absolute;
+        top: calc(100% + 5px);
+        width: 100%;
+        //min-width: 410px;
+        max-height: 200px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: $color-white;
+        border: 1px solid $color-gray5;
+        border-radius: 7px;
+        -webkit-box-shadow: 0 0 1px rgb(0 0 0 / 10%);
+        box-shadow: 0 0 1px rgb(0 0 0 / 10%);
+        overflow-y: scroll;
+    }
+    .option-item{
+    }
+    .btn-option{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        &:hover{
+            background-color: $color-gray5;
+        }
+        .canada{
+            background-position: -145px -51px;
+        }
+        .china{
+            background-position: -61px -74px;
+        }
+        .france{
+            background-position: -33px -120px;
+        }
+        .japan{
+            background-position: -145px -166px;
+        }
+        .korea{
+            background-position: -33px -189px;
+        }
+    }
+    .option-box{
+        display: flex;
+    }
+    .option-flag{
+        margin-left: 8px;
+    }
+    .select-arrow{
+        margin-left: 6px;
+        border-style: solid;
+        border-width: 5px 4px 0;
+        border-color: $color-gray4 transparent transparent;
+    }
+    .select-code{
+        margin-left: 10px;
+    }
+    input{
+        width: calc(100% - 80px);
+        &::placeholder{
+            color: $color-gray2;
+        }
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 400;
+        height: 52px;
+    }
+    .txt{
+        margin-top: 20px;
+        color: $color-gray1;
+        font-size: 12px;
+        font-weight: 300;
+        span{
+            color: $color-txt;
+        }
+    }
 }

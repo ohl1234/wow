@@ -243,8 +243,10 @@
                 <div class="column-left">
                     <h2 class="sc-title">Location</h2>
                     <div class="station-box">
-                        <em>Tekhnopark Station</em>
-                        <span>7 minute walk</span>
+                        <div class="txt-wrap">
+                            <em>Tekhnopark Station</em>
+                            <span>7 minute walk</span>
+                        </div>
                     </div>
                 </div> 
                 <div class="column-right">
@@ -268,7 +270,7 @@
                                     <span>10 min</span>
                                 </div>
                             </div>
-                            <div class="thumb-box"></div>
+                            <div class="thumb-box thumb1"></div>
                         </li>
                         <li class="location-item">
                             <div class="txt-box">
@@ -281,7 +283,7 @@
                                     <span>8 min</span>
                                 </div>
                             </div>
-                            <div class="thumb-box"></div>
+                            <div class="thumb-box thumb2"></div>
                         </li>
                         <li class="location-item">
                             <div class="txt-box">
@@ -294,7 +296,7 @@
                                     <span>22 min</span>
                                 </div>
                             </div>
-                            <div class="thumb-box"></div>
+                            <div class="thumb-box thumb3"></div>
                         </li>
                         <li class="location-item">
                             <div class="txt-box">
@@ -307,9 +309,9 @@
                                     <span>26 min</span>
                                 </div>
                             </div>
-                            <div class="thumb-box"></div>
+                            <div class="thumb-box thumb4"></div>
                         </li>
-                        <li class="location-item">
+                        <li class="location-item map">
                             <a href="#" class="thumb-box">
                                 <img src="./asset/images/location-map.svg" alt="wow apartments map">
                             </a>
@@ -337,7 +339,7 @@
                         <form action="#" method="post">
                             <fieldset>
                                 <legend class="blind">requset</legend>
-                                <div class="input-box">
+                                <div class="input-wrap">
                                     <div class="select-wrapper" data-role="selectbox">
                                         <div class="select-box">
                                             <button class="selection" type="button">
@@ -347,45 +349,60 @@
                                             </button>   
                                             <ul class="select-option">
                                                 <li class="option-item">
-                                                    <button type="button" class="btn-option">Canada
-                                                        <span class="option-code">+1</span>
-                                                        <span class="option-flag"></span>
+                                                    <button type="button" class="btn-option">
+                                                        <i class="country-name">Canada</i>
+                                                        <span class="option-box">
+                                                            <span class="option-code">+1</span>
+                                                            <span class="option-flag canada"></span>
+                                                        </span>
                                                     </button>
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn-option">China
-                                                        <span class="option-code">+86</span>
-                                                        <span class="option-flag"></span>
+                                                    <button type="button" class="btn-option">
+                                                        <i class="country-name">China</i>
+                                                        <span class="option-box">
+                                                            <span class="option-code">+86</span>
+                                                            <span class="option-flag china"></span>
+                                                        </span>
                                                     </button>
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn-option">France
-                                                        <span class="option-code">+33</span>
-                                                        <span class="option-flag"></span>
+                                                    <button type="button" class="btn-option">
+                                                        <i class="country-name">France</i>
+                                                        <span class="option-box">
+                                                            <span class="option-code">+33</span>
+                                                            <span class="option-flag france"></span>
+                                                        </span>
                                                     </button>
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn-option">Japan
-                                                        <span class="option-code">+81</span>
-                                                        <span class="option-flag"></span>
+                                                    <button type="button" class="btn-option">
+                                                        <i class="country-name">Japan</i>
+                                                        <span class="option-box">
+                                                            <span class="option-code">+81</span>
+                                                            <span class="option-flag japan"></span>
+                                                        </span>
                                                     </button>
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn-option">South Korea
-                                                        <span class="option-code">+82</span>
-                                                        <span class="option-flag"></span>
+                                                    <button type="button" class="btn-option">
+                                                        <i class="country-name">South Korea</i>
+                                                        <span class="option-box">
+                                                            <span class="option-code">+82</span>
+                                                            <span class="option-flag"></span>
+                                                        </span>
                                                     </button>
                                                 </li>
                                             </ul>
                                         </div>
                                         <input type="text" placeholder="(999)999-99-99 ">    
                                     </div>
+                                    <button class="btn-send">Send requset</button>
                                 </div>
-                                <button class="btn-send">Send requset</button>
                             </fieldset>
                         </form>
+                        <p class="txt">I consent to the processing of<span>personal data</span></p>
                     </div>
-                    <p class="txt">I consent to the processing of<span>personal data</span></p>
                 </div>
             </div>
         </section>

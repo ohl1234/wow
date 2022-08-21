@@ -92,3 +92,17 @@
         color: $color-white;
     }
 }
+.input-area{
+    .btn-send{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 160px;
+        height: 40px;
+        padding: 0 15px;
+        display: block;
+        color: $color-white;
+        background-color: $color-txt;
+        border-radius: 20px;
+    }
+}
