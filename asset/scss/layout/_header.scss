@@ -1,9 +1,12 @@
 .header,.gnb-header{
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 12px 40px;
+    width: 100%;
+    padding: 12px 40px;
     line-height: 17px;
     color: $color-white;
     font-size: 14px;
@@ -37,14 +40,6 @@
     .link-choose{
         margin-left: 32px;
     }
-    .gnb-area{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        background-color: $color-beige1;
-    }
     .right-area{
         zoom: 1.08;
 
@@ -71,8 +66,15 @@
 
 .gnb-area{
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: $color-beige1;
     color: $color-txt;
     .gnb-header{
+        position: static;
         color: $color-txt;
     }
     .btn-close{

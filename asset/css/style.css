@@ -231,11 +231,14 @@ input, select, button, fieldset {
 }
 
 .header, .gnb-header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 12px 40px;
+  width: 100%;
+  padding: 12px 40px;
   line-height: 17px;
   color: #fff;
   font-size: 14px;
@@ -273,14 +276,6 @@ input, select, button, fieldset {
 .header .link-choose, .gnb-header .link-choose {
   margin-left: 32px;
 }
-.header .gnb-area, .gnb-header .gnb-area {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #ecebe4;
-}
 .header .right-area, .gnb-header .right-area {
   zoom: 1.08;
 }
@@ -305,9 +300,16 @@ input, select, button, fieldset {
 
 .gnb-area {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ecebe4;
   color: #5f5348;
 }
 .gnb-area .gnb-header {
+  position: static;
   color: #5f5348;
 }
 .gnb-area .btn-close .bar-wrap {
