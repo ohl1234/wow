@@ -1,9 +1,9 @@
 .sc-visual{
     position: relative;
-    height: 784px;
+    height: 1053px;
     background: linear-gradient(180deg, rgba(105,146,184,1) 0%, rgba(224,219,214,1) 98%);
     & > *{
-        //zoom: 1.09;
+        zoom: 1.34;
     }
     .desc{
         position: absolute;
@@ -22,7 +22,6 @@
         transform: translateX(-50%);
         width: 928px;
         height: 320px;
-        zoom: 1.09;
     }
     .thumb-area{
         position: absolute;
@@ -285,7 +284,7 @@
             display: inline-block;
             font-size: 16px;
             line-height: 22px;
-            font-weight: 300;
+            font-weight: 300;ƒ
             span{
                 display: block;
             }

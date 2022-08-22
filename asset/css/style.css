@@ -873,10 +873,6 @@ section + section {
   border-color: transparent;
   border-style: solid;
   zoom: 1.34;
-  -ms-zoom: 1.34;
-  -webkit-zoom: 1.34;
-  -moz-transform: scale(1.34, 1.34);
-  -moz-transform-origin: left center;
 }
 
 .sub-title {
@@ -888,17 +884,15 @@ section + section {
   border-color: transparent;
   border-style: solid;
   zoom: 1.34;
-  zoom: 1.34;
-  -ms-zoom: 1.34;
-  -webkit-zoom: 1.34;
-  -moz-transform: scale(1.34, 1.34);
-  -moz-transform-origin: left center;
 }
 
 .sc-visual {
   position: relative;
-  height: 784px;
+  height: 1053px;
   background: linear-gradient(180deg, rgb(105, 146, 184) 0%, rgb(224, 219, 214) 98%);
+}
+.sc-visual > * {
+  zoom: 1.34;
 }
 .sc-visual .desc {
   position: absolute;
@@ -917,7 +911,6 @@ section + section {
   transform: translateX(-50%);
   width: 928px;
   height: 320px;
-  zoom: 1.09;
 }
 .sc-visual .thumb-area {
   position: absolute;
@@ -1170,7 +1163,7 @@ section + section {
   line-height: 22px;
   font-weight: 300;
 }
-.sc-location .txt-box span span {
+.sc-location .txt-box span ƒ span {
   display: block;
 }
 .sc-location .input-area {
