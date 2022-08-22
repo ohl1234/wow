@@ -1,3 +1,12 @@
+.header{
+    .btn-requset{
+        width: 140px;
+        height: 32px;
+        font-size: 12px;
+        font-weight: 500;
+        @include btn3;
+    }
+}
 .btn-menu,.btn-close{
     display: inline-block;
     height: 32px;
@@ -88,7 +97,6 @@
         padding: 0 15px;
         background-color: $color-brown;
         border-radius: 400px;
-        font-size: 14px;
         color: $color-white;
     }
 }
@@ -108,37 +116,26 @@
 }
 .sc-parking{
     .link-btn{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
         width: 191px;
         height: 40px;
         margin-top: 20px;
-        color: $color-blue;
-        line-height: 1.55;
-        border-radius: 30px;
-        background-color: $color-white;
-        background-position: center center;
-        border-color: transparent;
-        border-style: solid;
-        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        @include btn2;
     }
 }
 .sc-apartments{
     .link-more{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 164px;
         height: 40px;
-        line-height: 1.55;
-        font-weight: 400;
-        border-radius: 30px;
-        color: $color-white;
-        background-color: $color-brown;
-        background-position: center center;
-        border-color: transparent;
-        border-style: solid;
-        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-        }
+        @include btn1;
+    }
+}
+.slide3{
+    .link-btn{    
+        width: 155px;
+        height: 40px;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        @include btn1;
+    }
 }

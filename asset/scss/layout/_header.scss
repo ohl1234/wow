@@ -28,21 +28,6 @@
     .link-tel{
         margin-right: 32px;
     }
-    .btn-requset{
-        width: 140px;
-        height: 32px;
-        color: $color-blue;
-        font-size: 12px;
-        font-weight: 500;
-        border-radius: 30px;
-        background-color: $color-beige2;
-        background-position: center center;
-        border-color: transparent;
-        border-style: solid;
-        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-        transition-delay: 0.2s;
-        transition-duration: 3s;
-    }
 }
 .gnb-area{
     display: none;
