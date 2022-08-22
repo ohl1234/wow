@@ -866,6 +866,40 @@ section + section {
   border-radius: 20px;
 }
 
+.sc-parking .link-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 191px;
+  height: 40px;
+  margin-top: 20px;
+  color: #434e60;
+  line-height: 1.55;
+  border-radius: 30px;
+  background-color: #fff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.sc-apartments .link-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 40px;
+  line-height: 1.55;
+  font-weight: 400;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #605348;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
 .sc-title {
   font-size: 16px;
   line-height: 19px;
@@ -1379,6 +1413,8 @@ section + section {
 
 .sc-parking {
   margin: 140px 0;
+}
+.sc-parking > div {
   zoom: 1.34;
 }
 
@@ -1431,24 +1467,8 @@ section + section {
   margin-top: 10px;
   line-height: 19px;
 }
-.parking-item .txt-box .link-btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 191px;
-  height: 40px;
-  margin-top: 20px;
-  color: #434e60;
-  line-height: 1.55;
-  border-radius: 30px;
-  background-color: #fff;
-  background-position: center center;
-  border-color: transparent;
-  border-style: solid;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-}
 
-.sc-storage {
+.sc-storage > div {
   zoom: 1.34;
 }
 
@@ -1524,9 +1544,6 @@ section + section {
   margin: 140px 0 100px;
   color: #fff;
 }
-.sc-infrastructure * > div {
-  zoom: 1.34;
-}
 
 .group-flex11 {
   position: absolute;
@@ -1543,6 +1560,7 @@ section + section {
 }
 .group-flex11 .tab-list {
   display: flex;
+  zoom: 1.34;
 }
 .group-flex11 .tab-item {
   opacity: 0.4;
@@ -1557,10 +1575,85 @@ section + section {
 }
 
 .group-flex12 {
+  width: 100%;
   height: 740px;
 }
 
 .slide2 {
   width: 100%;
   height: 100%;
+}
+.slide2 .swiper-slide {
+  height: 740px;
+}
+.slide2 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.sc-apartments {
+  margin: 100px 0;
+}
+
+.group-flex13 {
+  display: flex;
+  height: 520px;
+  background-color: #dad7d0;
+  zoom: 1.34;
+}
+.group-flex13 .column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+  padding: 45px 0 45px 45px;
+}
+.group-flex13 .title-box > * {
+  zoom: 1;
+}
+.group-flex13 .sub-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.group-flex13 .more-box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid #c6c0ba;
+}
+.group-flex13 .more-box .desc {
+  font-size: 18px;
+  line-height: 24px;
+}
+.group-flex13 .column-right {
+  display: flex;
+  width: 45%;
+  padding-left: 80px;
+  overflow: hidden;
+}
+.group-flex13 .rolling-item {
+  width: 256px;
+  height: 290px;
+  background-color: #ecebe4;
+  background-image: url(../images/apartments-layout1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.5;
+}
+.group-flex13 .rolling-item:nth-of-type(2) {
+  margin: 20px 0;
+}
+.group-flex13 .wrap1 {
+  transform: translateY(-40%);
+  margin-right: 20px;
+}
+.group-flex13 .wrap1 .rolling-item:nth-of-type(2) {
+  opacity: 1;
+}
+.group-flex13 .wrap2 .rolling-item {
+  background-image: url(../images/apartments-layout2.svg);
+}
+.group-flex13 .wrap2 .rolling-item:nth-of-type(2) {
+  margin: 20px 0;
 }
