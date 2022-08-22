@@ -714,7 +714,7 @@
     .column-right{
         display: flex;
         width: 45%;
-        padding-left: 80px;
+        padding-left: 10%;
         overflow: hidden;
     }
     .rolling-wrap{}
@@ -913,4 +913,116 @@
         background-image: url(../images/next.svg);
     }
 }
-.group-flex16{}
+.group-flex16{
+    & > div{
+        & + div{
+            zoom: 1.34;
+        }
+    }
+    .sub-title{
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: capitalize;
+    }
+    .project-area{
+        position: relative;
+        width: 100%;
+        height: 640px;
+        margin-top: 30px;
+        background-image: url(../images/project-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .info-wrap{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .info1{
+        width: 202px;
+        height: 256px;
+        top: 254px;
+        left: 66px;
+    }
+    .info2{
+        width: 139px;
+        height: 91px;
+        top: 395px;
+        left: 270px;
+    }
+    .info3{
+        width: 205px;
+        height: 169px;
+        top: 338px;
+        left: 425px;
+    }
+    .info-hover{
+        @include position-Center;
+        width: 100%;
+        height: 100%;
+        &::after{
+            content: '';
+            position: absolute;
+            top:0;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        &.active{
+            &::after{
+                opacity: 1;
+            }
+        }
+    }    
+    .info1{
+        .info-hover{
+            &::after{
+                background-image: url(../images/project-dim1.svg);
+            }
+        }
+    }
+    .info2{
+        .info-hover{
+            &::after{
+                background-image: url(../images/project-dim2.svg);
+            }
+        }
+    }
+    .info3{
+        .info-hover{
+            &::after{
+                background-image: url(../images/project-dim3.svg);
+            }
+        }
+    }
+    .ic-plus{
+        @include position-Center;
+        z-index: 3;
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-color: $color-brown;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .info-box{
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 30px);
+        transform: translateY(-50%);
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        padding: 15px;
+        background-color: $color-white;
+        border-radius: 4px;
+        box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 30%);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+}
