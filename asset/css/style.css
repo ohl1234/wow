@@ -1376,3 +1376,145 @@ section + section {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.sc-parking {
+  margin: 140px 0;
+  zoom: 1.34;
+}
+
+.group-flex8 {
+  padding: 0 80px;
+}
+
+.parking-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parking-item {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  background-image: url(../images/benefits-thumb7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parking-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 450px;
+  height: 500px;
+}
+.parking-item:last-of-type {
+  margin-top: 50px;
+  background-image: url(../images/benefits-thumb8.jpg);
+}
+.parking-item .txt-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  padding: 30px;
+  color: #fff;
+}
+.parking-item .txt-box .txt-tit {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.parking-item .txt-box .desc {
+  margin-top: 10px;
+  line-height: 19px;
+}
+.parking-item .txt-box .link-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 191px;
+  height: 40px;
+  margin-top: 20px;
+  color: #434e60;
+  line-height: 1.55;
+  border-radius: 30px;
+  background-color: #fff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.sc-storage {
+  zoom: 1.34;
+}
+
+.group-flex9 {
+  margin-bottom: 50px;
+}
+.group-flex9 .sub-title {
+  zoom: 1;
+}
+
+.group-flex10 {
+  display: flex;
+  border-top: 1px solid #c6c0ba;
+  border-bottom: 1px solid #c6c0ba;
+}
+.group-flex10 > div {
+  height: 480px;
+}
+.group-flex10 .column-left {
+  position: relative;
+  overflow: hidden;
+  width: 60%;
+}
+.group-flex10 .column-left .thumb-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.group-flex10 .column-left .thumb-box + div {
+  top: -100%;
+}
+.group-flex10 .column-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.group-flex10 .column-right {
+  position: relative;
+  width: 40%;
+  padding-left: 30px;
+}
+.group-flex10 .column-right .storage-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.group-flex10 .column-right .storage-item {
+  display: flex;
+  align-items: center;
+  height: 16.6666666667%;
+  border-bottom: 1px solid #c6c0ba;
+}
+.group-flex10 .column-right .storage-item :hover > * {
+  opacity: 0.4;
+}
+.group-flex10 .column-right .storage-item:last-of-type {
+  border-bottom: none;
+}
+.group-flex10 .column-right .txt-tit {
+  font-size: 20px;
+  line-height: 24px;
+}
+.group-flex10 .column-right .desc {
+  display: block;
+  margin-top: 6px;
+  color: #7c7267;
+  font-weight: 300;
+}
