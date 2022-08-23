@@ -139,3 +139,11 @@
         @include btn1;
     }
 }
+.purchase-area{
+    .btn-send{
+        @include btn1;
+        width: 100%;
+        height: 40px;
+        margin-top: 76px;
+    }
+}

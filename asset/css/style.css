@@ -918,6 +918,23 @@ section + section {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
+.purchase-area .btn-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 1.55;
+  border-radius: 30px;
+  background-color: #605348;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 100%;
+  height: 40px;
+  margin-top: 76px;
+}
+
 .sc-title {
   font-size: 16px;
   line-height: 19px;
@@ -1970,6 +1987,7 @@ section + section {
 }
 .group-flex18 .group-map {
   display: flex;
+  margin-top: 50px;
 }
 .group-flex18 .column-left {
   width: 736px;
@@ -1986,6 +2004,285 @@ section + section {
 }
 .group-flex18 .column-right {
   width: 30%;
+  align-self: flex-end;
+  padding: 0 30px;
+}
+.group-flex18 .column-right .txt-box {
+  font-size: 18px;
+  line-height: 23px;
+}
+.group-flex18 .column-right .desc {
+  margin-bottom: 20px;
+}
+.group-flex18 .column-right .link-btn {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+}
+.group-flex18 .column-right .link-btn::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.group-flex18 .column-right .building::before {
+  background-image: url(../images/building.svg);
+}
+.group-flex18 .column-right .document {
+  margin-top: 10px;
+}
+.group-flex18 .column-right .document::before {
+  background-image: url(../images/document.svg);
+}
+
+.group-flex19 {
+  margin: 100px 0;
+}
+.group-flex19 .sub-title {
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: capitalize;
+}
+.group-flex19 .team-list {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.group-flex19 .team-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 160px;
+}
+.group-flex19 .team-item + li {
+  border-left: 1px solid #c6c0ba;
+}
+
+.sc-payment {
+  margin-bottom: 120px;
+}
+
+.group-flex20 {
+  display: flex;
+  margin-bottom: 30px;
+}
+.group-flex20 .sc-title {
+  width: 25%;
+}
+.group-flex20 .sub-title {
+  width: 75%;
+  zoom: 1.34;
+}
+.group-flex20 .sub-title span {
+  display: block;
+}
+.group-flex20 .sub-title span:last-of-type {
+  margin-left: 150px;
+}
+
+.group-flex21 {
+  display: flex;
+  justify-content: space-between;
+  zoom: 1.34;
+  height: 452px;
+}
+.group-flex21 .column-left {
+  width: 50%;
+}
+.group-flex21 .pay-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.group-flex21 .pay-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 29px;
+}
+.group-flex21 .pay-item:last-of-type .pay-link::after {
+  content: none;
+}
+.group-flex21 .pay-link {
+  position: relative;
+  align-self: flex-end;
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.group-flex21 .pay-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/link.svg);
+  background-repeat: no-repeat;
+}
+.group-flex21 .pay-link > * {
+  display: block;
+  width: 158px;
+}
+.group-flex21 .pay-link span {
+  color: #797169;
+}
+.group-flex21 .pay-link span:first-of-type {
+  margin-right: 20px;
+}
+.group-flex21 .column-right {
+  width: 40%;
+}
+.group-flex21 .purchase-area {
+  height: 100%;
+  padding: 40px;
+  background-color: #dad7d0;
+}
+.group-flex21 .purchase-area .area-title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+.group-flex21 .purchase-area .input-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.group-flex21 .purchase-area .purchase-wrapper {
+  position: relative;
+}
+.group-flex21 .purchase-area .purchase-wrapper::after {
+  content: "";
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+}
+.group-flex21 .purchase-area #purchase-way {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  height: 47px;
+  background-color: transparent;
+  border-bottom: 1px solid #c6c0ba;
+}
+.group-flex21 .purchase-area .select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  border-bottom: 1px solid #c6c0ba;
+}
+.group-flex21 .purchase-area .selection {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.group-flex21 .purchase-area .select-flag, .group-flex21 .purchase-area .option-flag {
+  display: block;
+  width: 18px;
+  min-width: 18px;
+  height: 13px;
+  background-image: url(../images/sc-flag-bg.png);
+  background-repeat: no-repeat;
+  background-position: -285px -281px;
+  background-color: #c5c5c5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.group-flex21 .purchase-area .select-option {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  width: 100%;
+  max-height: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+}
+.group-flex21 .purchase-area .btn-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+.group-flex21 .purchase-area .btn-option:hover {
+  background-color: #eee;
+}
+.group-flex21 .purchase-area .btn-option .canada {
+  background-position: -145px -51px;
+}
+.group-flex21 .purchase-area .btn-option .china {
+  background-position: -61px -74px;
+}
+.group-flex21 .purchase-area .btn-option .france {
+  background-position: -33px -120px;
+}
+.group-flex21 .purchase-area .btn-option .japan {
+  background-position: -145px -166px;
+}
+.group-flex21 .purchase-area .btn-option .korea {
+  background-position: -33px -189px;
+}
+.group-flex21 .purchase-area .option-box {
+  display: flex;
+}
+.group-flex21 .purchase-area .option-flag {
+  margin-left: 8px;
+}
+.group-flex21 .purchase-area .select-arrow {
+  margin-left: 6px;
+  border-style: solid;
+  border-width: 5px 4px 0;
+  border-color: #9a9a9a transparent transparent;
+}
+.group-flex21 .purchase-area .select-code {
+  margin-left: 10px;
+}
+.group-flex21 .purchase-area input {
+  width: calc(100% - 80px);
+  background-color: transparent;
+  font-size: 14px;
+  height: 47px;
+}
+.group-flex21 .purchase-area input::-moz-placeholder {
+  color: #c6c0ba;
+}
+.group-flex21 .purchase-area input:-ms-input-placeholder {
+  color: #c6c0ba;
+}
+.group-flex21 .purchase-area input::placeholder {
+  color: #c6c0ba;
+}
+.group-flex21 .purchase-area .txt {
+  margin-top: 20px;
+  color: #9d958c;
+  font-size: 12px;
+  font-weight: 300;
+}
+.group-flex21 .purchase-area .txt span {
+  color: #5f5348;
 }
 
 .sc-gallery .sc-title {

@@ -993,8 +993,8 @@
                     <div class="column-right">
                         <div class="txt-box">
                             <p class="desc">We do not compromise on the quality. Each object is built to the highest standards, no matter whether it is in Moscow or in Tyumen.</p>
-                            <a href="#">Construction progress</a>
-                            <a href="#">Project documentation</a>
+                            <a href="#" class="link-btn building">Construction progress</a>
+                            <a href="#" class="link-btn document">Project documentation</a>
                         </div>
                     </div>
                 </div>
@@ -1029,31 +1029,30 @@
                 <div class="column-left">
                     <ul class="pay-list">
                         <li class="pay-item">
-                            100% payment
+                            <span>100% payment</span>
                             <div class="pay-link">
                                 <span>WITHOUT<br>BANKS</span>
                                 <a href="#" class="link-more">More<br>information</a>
                             </div>
                         </li>
                         <li class="pay-item">
-                            Mortgage from 5.1%
+                            <span>Mortgage from 5.1%</span>
                             <div class="pay-link">
                                 <span>TEAM<br>up to 30 years</span>
                                 <a href="#" class="link-more">More<br>information</a>
                             </div>
                         </li>
                         <li class="pay-item">
-                            Trade-In
+                            <span>Trade-In</span>
                             <div class="pay-link">
                                 <span>EXCHANGE<br>PROGRAMM</span>
                                 <span>Details in the sales<br>department</span>
-
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="column-right">
-                    <div class="purchase-wrap">
+                    <div class="purchase-area">
                         <strong class="area-title">
                             We'll answer all your questions and help you find the best purchase option
                         </strong>
@@ -1062,12 +1061,14 @@
                                 <fieldset>
                                     <legend class="blind">purchase</legend>
                                     <div class="input-wrap">
-                                        <select name="purchase-way" id="purchase-way">
-                                            <option value>Way of purchase</option>
-                                            <option value>100% оплата</option>
-                                            <option value>Ипотека</option>
-                                            <option value>Trade-In</option>
-                                        </select>
+                                        <div class="purchase-wrapper">
+                                            <select name="purchase-way" id="purchase-way">
+                                                <option value>Way of purchase</option>
+                                                <option value>100% оплата</option>
+                                                <option value>Ипотека</option>
+                                                <option value>Trade-In</option>
+                                            </select>
+                                        </div>
                                         <div class="select-wrapper" data-role="selectbox">
                                             <div class="select-box">
                                                 <button class="selection" type="button">
@@ -1077,33 +1078,48 @@
                                                 </button>   
                                                 <ul class="select-option">
                                                     <li>
-                                                        <button type="button" class="btn-option">Canada
-                                                            <span class="option-code">+1</span>
-                                                            <span class="option-flag"></span>
+                                                        <button type="button" class="btn-option">
+                                                            <i class="country-name">Canada</i>
+                                                            <span class="option-box">
+                                                                <span class="option-code">+1</span>
+                                                                <span class="option-flag"></span>
+                                                            </span>
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <button type="button" class="btn-option">China
-                                                            <span class="option-code">+86</span>
-                                                            <span class="option-flag"></span>
+                                                        <button type="button" class="btn-option">
+                                                            <i class="contry-name">China</i>
+                                                            <span class="option-box">
+                                                                <span class="option-code">+86</span>
+                                                                <span class="option-flag"></span>
+                                                            </span>
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <button type="button" class="btn-option">France
-                                                            <span class="option-code">+33</span>
-                                                            <span class="option-flag"></span>
+                                                        <button type="button" class="btn-option">
+                                                            <i class="country-name">France</i>
+                                                            <span class="option-box">
+                                                                <span class="option-code">+33</span>
+                                                                <span class="option-flag"></span>
+                                                            </span>
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <button type="button" class="btn-option">Japan
-                                                            <span class="option-code">+81</span>
-                                                            <span class="option-flag"></span>
+                                                        <button type="button" class="btn-option">
+                                                            <i class="country-name">Japan</i>
+                                                            <span class="option-box">
+                                                                <span class="option-code">+81</span>
+                                                                <span class="option-flag"></span>
+                                                            </span>
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <button type="button" class="btn-option">South Korea
-                                                            <span class="option-code">+82</span>
-                                                            <span class="option-flag"></span>
+                                                        <button type="button" class="btn-option">
+                                                            <i class="country-name">South Korea</i>
+                                                            <span class="option-box">
+                                                                <span class="option-code">+82</span>
+                                                                <span class="option-flag"></span>
+                                                            </span>
                                                         </button>
                                                     </li>
                                                 </ul>
