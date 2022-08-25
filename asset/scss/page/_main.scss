@@ -1,9 +1,10 @@
 .sc-visual{
     position: relative;
-    height: 965px;
+    height:60vw;
+    overflow: hidden;
     background: linear-gradient(180deg, rgba(105,146,184,1) 0%, rgba(224,219,214,1) 98%);
     & > *{
-        zoom: 1.33;
+        
     }
     .desc{
         position: absolute;
@@ -17,31 +18,30 @@
     }
     .ani-area{
         position: absolute;
-        top: 76px;
-        left: 50%;
-        z-index: 3;
+        top: 5vw;
+        left: 50vw;
         transform: translateX(-50%);
-        width: 77.333%;
-        height: 320px;
+        z-index: 3;
+        width: 80vw;
     }
     .thumb-area{
         position: absolute;
         bottom: 0px;
         left: 0;
         z-index: 10;
+        padding-bottom: 50%;
         width: 100%;
-        height: 580px;
         background-image: url(../images/main-visual.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        background-size: 100%;
+        background-position: center bottom;
     }
 }
-@include laptop1{
-    .sc-visual{
-        height: 726px;
-    }
-}
+// @include laptop1{
+//     .sc-visual{
+//         height: 726px;
+//     }
+// }
 .sc-about{
     padding: 110px 40px;
     background-image: url(../images/about-bg.png);
@@ -73,7 +73,7 @@
             font-size: 20px;
             line-height: 26px;
             font-weight: 300;
-            zoom: 1.34;
+            //
             span{
                 display: block;
                 & + span{
@@ -111,7 +111,7 @@
             font-weight: 300;
             font-size: 18px;
             line-height: 24px;
-            zoom: 1.34;
+            
             span{
                 display: block;
                 width: 406px;
@@ -150,7 +150,7 @@
             }
             & > *{
                 display: block;
-                zoom: 1.34;
+                //
             }
             .txt-wrap{
                 display: flex;
@@ -178,7 +178,7 @@
     .group-flex4{
         display: flex;
         margin-top: 64px;
-        zoom:1.34;
+        
         .column-left{
             width: 55%;
             padding-right: 30px;
@@ -275,7 +275,7 @@
         height: 224px;
         margin-top: 140px;
         background-color: $color-beige3;
-        zoom: 1.34;
+        
     }
     .txt-box{
         font-size: 40px;
@@ -328,15 +328,32 @@
         cursor: pointer;
     }
     .select-flag,.option-flag{
-        display: block;
-        width: 18px;
-        min-width: 18px;
-        height: 13px;
-        @include flag-Img;
-        background-position: -285px -281px;
-        background-color: $color-gray3;
-        -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
-        box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+        i{
+            display: block;
+            width: 18px;
+            min-width: 18px;
+            height: 13px;
+            @include flag-Img;
+            background-position: -285px -281px;
+            background-color: $color-gray3;
+            -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+            box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+            &.canada{
+                background-position: -145px -51px;
+            }
+            &.china{
+                background-position: -61px -74px;
+            }
+            &.france{
+                background-position: -33px -120px;
+            }
+            &.japan{
+                background-position: -145px -166px;
+            }
+            &.korea{
+                background-position: -33px -189px;
+            }
+        }
     }
     .select-option{
         display: none;
@@ -352,6 +369,9 @@
         -webkit-box-shadow: 0 0 1px rgb(0 0 0 / 10%);
         box-shadow: 0 0 1px rgb(0 0 0 / 10%);
         overflow-y: scroll;
+        &.active{
+            display: block;
+        }
     }
     .btn-option{
         display: flex;
@@ -434,7 +454,7 @@
     border-top: 1px solid $color-gray2;
     border-bottom: 1px solid $color-gray2;
     & > *{
-        zoom: 1.34;
+        
     }
 }
 .slide1{
@@ -502,7 +522,7 @@
 .sc-parking{
     margin: 140px 0;
     & > div{
-        zoom: 1.34;
+        
     }
 }
 .group-flex8{
@@ -554,13 +574,13 @@
 }
 .sc-storage{
     & > div{
-        zoom: 1.34;
+        
     }
 }
 .group-flex9{
     margin-bottom: 50px;
     .sub-title{
-        zoom: 1;
+    
     }
 }
 .group-flex10{
@@ -578,8 +598,18 @@
             position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
+            height: 100%;
             & + div{
                 top: -100%;
+            }
+            &.active{
+                top: 0;
+                transition: 1s;
+            }
+            &.hide{
+                top: 100%;
+                transition: 1s;
             }
         }
         img{
@@ -643,9 +673,18 @@
     }
     .tab-list{
         display: flex;
-        zoom: 1.34;
+        
     }
     .tab-item{
+        &.swiper-pagination-bullet{
+            margin: 0;
+            width: auto;
+            height: auto;
+            background: none;
+            &-active{
+                opacity: 1;
+            }
+        }
         & + a{
             margin-left: 30px;
         }
@@ -683,7 +722,7 @@
     display: flex;
     height: 520px;
     background-color: $color-beige3;
-    zoom: 1.34;
+    
     .column-left{
         display: flex;
         flex-direction: column;
@@ -693,7 +732,7 @@
     }
     .title-box{
         & > *{
-            zoom: 1;
+        
         }
     }
     .sub-title{
@@ -771,7 +810,7 @@
             &:disabled{
                 opacity: 0.4;
             }
-            zoom: 1.34;
+            
         }
     }
     .btn-prev{
@@ -787,7 +826,7 @@
     }
 }
 .slide3{
-    zoom: 1.34;
+    
     .swiper{
         padding: 0 40px;
     }
@@ -824,7 +863,7 @@
     margin-bottom: 100px;
     & > div{
         // & + div{
-        //     zoom: 1.34;
+        //     
         // }
     }
     .title-area{
@@ -862,7 +901,7 @@
     }
     .slide-area{
         position: relative;
-        zoom: 1.34;
+        
         width: 100%;
         height: 500px;
     }
@@ -907,7 +946,7 @@
         &:disabled{
             opacity: 0.4;
         }
-        //zoom: 1.34;
+        //
     }
     .btn-prev{
         left: 20px;
@@ -921,7 +960,7 @@
 .group-flex16{
     & > div{
         & + div{
-            zoom: 1.34;
+            
         }
     }
     .sub-title{
@@ -932,11 +971,11 @@
     .project-area{
         position: relative;
         width: 100%;
-        height: 640px;
+        padding-bottom: 50%;
         margin-top: 30px;
         background-image: url(../images/project-bg.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         background-position: center center;
     }
     .info-wrap{
@@ -945,10 +984,10 @@
         background-size: cover;
     }
     .info1{
-        width: 202px;
-        height: 256px;
-        top: 254px;
-        left: 66px;
+        width: 18vw;
+        height: 20vw;
+        top: 18vw;
+        left: 5vw;
     }
     .info2{
         width: 139px;
@@ -986,6 +1025,8 @@
         .info-hover{
             &::after{
                 background-image: url(../images/project-dim1.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
             }
         }
     }
@@ -993,6 +1034,8 @@
         .info-hover{
             &::after{
                 background-image: url(../images/project-dim2.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
             }
         }
     }
@@ -1034,7 +1077,7 @@
 
 .sc-developer{
     & > div{
-        zoom: 1.34;
+        
     }
 }
 .group-flex17{
@@ -1051,7 +1094,7 @@
 }
 .group-flex18{
     .sc-title{
-        zoom: 1;
+    
     }
     .sub-title{
         display: block;
@@ -1061,7 +1104,7 @@
         font-size: 32px;
         line-height: 38px;
         text-transform: capitalize;
-        zoom: 1;
+    
     }
     .group-map{
         display: flex;
@@ -1153,7 +1196,7 @@
     }
     .sub-title{
         width: 75%;
-        zoom: 1.34;
+        
         span{
             display: block;
             &:last-of-type{
@@ -1165,7 +1208,7 @@
 .group-flex21{
     display: flex;
     justify-content: space-between;
-    zoom: 1.34;
+    
     height: 452px;
     .column-left{
         width: 50%;
@@ -1372,7 +1415,7 @@
         margin-bottom: 20px;
     }
     .slide5{
-        zoom: 1.34;
+        
     }
     button{
         position: absolute;
@@ -1389,7 +1432,7 @@
         &:disabled{
             opacity: 0.4;
         }
-        //zoom: 1.34;
+        //
     }
     .btn-prev{
         left: 20px;

@@ -13,20 +13,20 @@ section{
         padding: 0 40px;
     }
 }
-@include laptop1{
-    .header{
-        & *{
-            zoom: 1 !important;
-        }
-    }
-    .container{
-        & *{
-            zoom: 1 !important;
-        }
-    }
-    .footer{
-        & *{
-            zoom: 1 !important;
-        }
-    }
-}
+// @include laptop1{
+//     .header{
+//         & *{
+//             zoom: 1 !important;
+//         }
+//     }
+//     .container{
+//         & *{
+//             zoom: 1 !important;
+//         }
+//     }
+//     .footer{
+//         & *{
+//             zoom: 1 !important;
+//         }
+//     }
+// }

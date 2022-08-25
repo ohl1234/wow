@@ -7,26 +7,22 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 12px 40px;
+    padding: 1.2vw 40px;
     line-height: 17px;
     color: $color-white;
-    font-size: 14px;
+    font-size: 1.3vw;
     .logo-area{
         @include position-Center;
         opacity: 0;
     }
-    .left-area{
-        zoom: 1.34;
-    }
     .link-choose{
         margin-left: 32px;
     }
-    .right-area{
-        zoom: 1.34;
-
-    }
     .link-tel{
         margin-right: 32px;
+    }
+    .right-area{
+        vertical-align: middle;
     }
 }
 .gnb-area{
@@ -48,9 +44,6 @@
     .thumb-box,.gnb-box{
         margin: 80px 0;
         width: 50%;
-        & > *{
-            //transform: scale(1.08);
-        }
     }
     .thumb-box{
         position: relative;
@@ -87,9 +80,8 @@
     .gnb-title{
         margin-bottom: 40px;
         padding-left: 10px;
-        font-size: 48px;
+        font-size: 4vw;
         line-height: 1.1;
-        font-weight: 400;
         letter-spacing: -2px;
     }
     .gnb-list{
@@ -99,7 +91,7 @@
     }
     .gnb-item{
         width: 50%;
-        font-size: 18px;
+        font-size: 1.4vw;
         line-height: 22px;
         font-weight: 300;
         &:nth-of-type(1){
@@ -139,17 +131,16 @@
         display: flex;
         margin: 12px 32px 40px;
         font-weight: 300;
-        zoom: 1.34;
         & > *{
             width: 50%;
-            font-size: 16px;
+            font-size: 1.4vw;
             line-height: 19px;
-            em{
-                display: block;
-                margin-bottom: 10px;
-                color: $color-gray1;
-            }
         }
+    }
+    .info-tit{
+        display: block;
+        margin-bottom: 10px;
+        color: $color-gray1;
     }
     .info-list{
         display: flex;
@@ -192,21 +183,27 @@
                 border: none;
             }
         }
+        .info-tit{
+            padding-left: 20px;
+        }
     }
 }
 
 .requset-area{
-    display: none;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     min-width: 400px;
     height: 100vh;
     padding: 45px;
-    z-index: 999;
+    z-index: 1200;
     color: $color-txt;
     background-color: $color-beige1;
-    .area-title{
+    transition: all 1s;
+    &.active{
+        right: 0;
+    }
+    .group-title{
         margin-bottom: 30px;
         font-size: 40px;
         line-height: 1.1;
@@ -269,8 +266,6 @@
         box-shadow: 0 0 1px rgb(0 0 0 / 10%);
         overflow-y: scroll;
     }
-    .option-item{
-    }
     .btn-option{
         display: flex;
         justify-content: space-between;
@@ -322,7 +317,7 @@
     .input-name{
         border-bottom: 1px solid $color-gray2;
     }
-    .txt{
+    .contact-msg{
         color: $color-gray1;
         font-size: 12px;
         font-weight: 300;
