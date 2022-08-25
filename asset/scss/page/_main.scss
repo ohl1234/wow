@@ -3,22 +3,19 @@
     height:60vw;
     overflow: hidden;
     background: linear-gradient(180deg, rgba(105,146,184,1) 0%, rgba(224,219,214,1) 98%);
-    & > *{
-        
-    }
-    .desc{
+    .slogan{
         position: absolute;
-        top: 64px;
+        top: 6vw;
         left: 50%;
         text-transform: uppercase;
         transform: translateX(-50%);
         color: $color-white;
-        font-size: 18px;
+        font-size: 1.4vw;
         line-height: 22px;
     }
     .ani-area{
         position: absolute;
-        top: 5vw;
+        top: 7vw;
         left: 50vw;
         transform: translateX(-50%);
         z-index: 3;
@@ -37,17 +34,13 @@
         background-position: center bottom;
     }
 }
-// @include laptop1{
-//     .sc-visual{
-//         height: 726px;
-//     }
-// }
+
 .sc-about{
     padding: 110px 40px;
     background-image: url(../images/about-bg.png);
     background-repeat: no-repeat;
     background-position: top top;
-    .group-flex1{
+    .group-title{
         display: flex;
         margin-bottom: 110px;
     }
@@ -68,10 +61,10 @@
                 }
             }
         }
-        .txt{
-            width: 625px;
-            font-size: 20px;
-            line-height: 26px;
+        .about-txt{
+            width: 55vw;
+            font-size: 1.4vw;
+            line-height: 1.3;
             font-weight: 300;
             //
             span{
@@ -83,14 +76,14 @@
         }
         .thumb-box{
             margin-top: 20px;
-            height: 420px;
+            padding-bottom: 50%;
             background-image: url(../images/about-thumb1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
     }
-    .group-flex2{
-        height: 516px;
+    .group-map{
+        height: 64vh;
         background-image: url(../images/about-map.svg);
         background-repeat: no-repeat;
         background-position: top right;
@@ -107,14 +100,14 @@
             display: flex;
             flex-direction: column;
         }
-        .txt{
+        .map-txt{
             font-weight: 300;
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 1.6vw;
+            line-height: 1.55;
             
             span{
                 display: block;
-                width: 406px;
+                width: 30vw;
                 & + span{
                     margin-top: 10px;
                 }
@@ -125,7 +118,7 @@
 }
 
 .sc-location{
-    .group-flex3{
+    .group-title{
         display: flex;
         justify-content: space-between;
         .column-left{
@@ -150,19 +143,19 @@
             }
             & > *{
                 display: block;
-                //
             }
             .txt-wrap{
                 display: flex;
                 flex-direction: column;
             }
             em{
-                font-size: 16px;
+                font-size: 1.3vw;
                 line-height: 19px;
                 text-transform: uppercase;
-                padding-bottom: 4px;
+                padding-bottom: 10px;
             }
             span{
+                font-size: 1.2vw;
                 line-height: 17px;
                 opacity: 0.8;
             }
@@ -175,9 +168,9 @@
             }
         }
     }
-    .group-flex4{
+    .group-list{
         display: flex;
-        margin-top: 64px;
+        margin-top: 80px;
         
         .column-left{
             width: 55%;
@@ -202,18 +195,17 @@
             }
         }
         .info-tit{
-            font-size: 24px;
+            font-size: 1.7vw;
             line-height: 29px;
             margin-bottom: 8px;
         }
         .info-txt{
-            line-height: 17px;
+            font-size: 1.2vw;
             opacity: 0.8;
         }
         .time{
             align-self: flex-end;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 1.3vw;
             i{
                 display: inline-block;
                 vertical-align: middle;
@@ -231,31 +223,30 @@
             background-image: url(../images/car.svg);
         }
         .thumb-box{
-            width: 180px;
-            height: 104px;
+            width: 17vw;
+            height: 17vh;
             background-image: url(../images/location-thumb1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            &.thumb2{
+                background-image: url(../images/location-thumb2.jpg);
+            }
+            &.thumb3{
+                background-image: url(../images/location-thumb3.jpg);
+            }
+            &.thumb4{
+                background-image: url(../images/location-thumb4.jpg);
+            }
         }
         .map {
-            .thumb-box{
+            .map-box{
                 display: block;
                 width: 100%;
                 height: 100%;
-                background: none;
             }
             img{
                 width: 100%;
             }
-        }
-        .thumb2{
-            background-image: url(../images/location-thumb2.jpg);
-        }
-        .thumb3{
-            background-image: url(../images/location-thumb3.jpg);
-        }
-        .thumb4{
-            background-image: url(../images/location-thumb4.jpg);
         }
         .column-right{
             width: 45%;
@@ -263,33 +254,33 @@
             .desc{
                 position: sticky;
                 top: 0;
-                width: 80%;
+                width: 70%;
                 word-break: keep-all;
                 font-weight: 300;
-                font-size: 18px;
-                line-height: 23px;
+                font-size: 1.2vw;
+                line-height: 1.3;
             }
         }
     }
-    .group-flex5{
-        height: 224px;
+    .group-contact{
+        height: 30vh;
         margin-top: 140px;
         background-color: $color-beige3;
         
     }
-    .txt-box{
-        font-size: 40px;
-        line-height: 44px;
-        div{
+    .title-box{
+        font-size: 3vw;
+        line-height: 1.2;
+        .contact-tit{
+            display: block;
             &:last-of-type{
                 display: inline-block;
             }
         }
-        span{
+        p{
             display: inline-block;
-            font-size: 16px;
-            line-height: 22px;
-            font-weight: 300;ƒ
+            font-size: 1.2vw;
+            font-weight: 300;
             span{
                 display: block;
             }
@@ -327,12 +318,14 @@
         font-size: 16px;
         cursor: pointer;
     }
-    .select-flag,.option-flag{
+    .select-flag{
         i{
             display: block;
             width: 18px;
             min-width: 18px;
             height: 13px;
+            transform: scale(1.3);
+            transform-origin: left center;
             @include flag-Img;
             background-position: -285px -281px;
             background-color: $color-gray3;
@@ -361,8 +354,8 @@
         top: calc(100% + 5px);
         width: 100%;
         max-height: 200px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        font-size: 1vw;
+        padding: 5px 0;
         background-color: $color-white;
         border: 1px solid $color-gray5;
         border-radius: 7px;
@@ -381,19 +374,19 @@
         &:hover{
             background-color: $color-gray5;
         }
-        .canada{
+        &.canada{
             background-position: -145px -51px;
         }
-        .china{
+        &.china{
             background-position: -61px -74px;
         }
-        .france{
+        &.france{
             background-position: -33px -120px;
         }
-        .japan{
+        &.japan{
             background-position: -145px -166px;
         }
-        .korea{
+        &.korea{
             background-position: -33px -189px;
         }
     }
@@ -401,16 +394,41 @@
         display: flex;
     }
     .option-flag{
+        display: block;
+        width: 18px;
+        min-width: 18px;
+        height: 13px;
         margin-left: 8px;
+        @include flag-Img;
+        background-position: -285px -281px;
+        background-color: $color-gray3;
+        -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+        box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+        &.canada{
+            background-position: -145px -51px;
+        }
+        &.china{
+            background-position: -61px -74px;
+        }
+        &.france{
+            background-position: -33px -120px;
+        }
+        &.japan{
+            background-position: -145px -166px;
+        }
+        &.korea{
+            background-position: -33px -189px;
+        }
     }
     .select-arrow{
-        margin-left: 6px;
+        margin-left: 15px;
         border-style: solid;
-        border-width: 5px 4px 0;
+        border-width: 8px 6px 0;
         border-color: $color-gray4 transparent transparent;
     }
     .select-code{
         margin-left: 10px;
+        font-size: 1.1vw;
     }
     input{
         width: calc(100% - 80px);
@@ -418,14 +436,14 @@
             color: $color-gray2;
         }
         background-color: transparent;
-        font-size: 14px;
+        font-size: 1.1vw;
         font-weight: 400;
         height: 52px;
     }
-    .txt{
+    .contact-msg{
         margin-top: 20px;
         color: $color-gray1;
-        font-size: 12px;
+        font-size: 1vw;
         font-weight: 300;
         span{
             color: $color-txt;
