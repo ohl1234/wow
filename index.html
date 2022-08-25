@@ -751,7 +751,7 @@
             </div>
         </section>
         <section class="sc-rare">
-            <div class="group-flex14">
+            <div class="group-title">
                 <h2 class="sc-title">Rare formats</h2>
                 <div class="navi">
                     <button class="btn-prev prev"><span class="blind">prev</span></button>
@@ -818,7 +818,7 @@
             </div>
         </section>
         <section class="sc-finishing">
-            <div class="group-flex15">
+            <div class="group-slide">
                 <div class="title-area">
                     <div class="column-left">
                         <h2 class="sc-title">Finishing</h2>
@@ -832,13 +832,13 @@
                     </div>
                 </div>
                 <div class="tab-list">
-                    <a href="#" class="btn-tab active">LIGHT</a>
-                    <a href="#" class="btn-tab">STONE</a>
-                    <a href="#" class="btn-tab">SAND</a>
-                    <a href="#" class="btn-tab">Shell&Core</a>
+                    <a href="#" class="btn-tab active" data-target="light">LIGHT</a>
+                    <a href="#" class="btn-tab" data-target="stone">STONE</a>
+                    <a href="#" class="btn-tab" data-target="sand">SAND</a>
+                    <a href="#" class="btn-tab" data-target="shell">Shell&Core</a>
                 </div>
                 <div class="slide-area">
-                    <div class="slide slide4 light">
+                    <div class="slide slide4 light active" data-id="light">
                         <div class="content">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
@@ -857,14 +857,14 @@
                                     <div class="swiper-slide">
                                         <img src="./asset/images/light-thumb5.jpg" alt="light5">
                                     </div>
-                                    <div class="pagination"></div>
-                                    <button class="btn-prev prev"><span class="blind">prev</span></button>
-                                    <button class="btn-next next"><span class="blind">next</span></button>
                                 </div>
+                                <div class="pagination"></div>
+                                <button class="btn-prev prev"><span class="blind">prev</span></button>
+                                <button class="btn-next next"><span class="blind">next</span></button>
                             </div>
                         </div>
                     </div>
-                    <div class="slide slide4 stone">
+                    <div class="slide slide4 stone" data-id="stone">
                         <div class="content">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
@@ -883,14 +883,14 @@
                                     <div class="swiper-slide">
                                         <img src="./asset/images/stone-thumb5.jpg" alt="stone5">
                                     </div>
-                                    <div class="pagination"></div>
-                                    <button class="btn-prev prev"><span class="blind">prev</span></button>
-                                    <button class="btn-next next"><span class="blind">next</span></button>
                                 </div>
+                                <div class="pagination"></div>
+                                <button class="btn-prev prev"><span class="blind">prev</span></button>
+                                <button class="btn-next next"><span class="blind">next</span></button>
                             </div>
                         </div>
                     </div>
-                    <div class="slide slide4 sand">
+                    <div class="slide slide4 sand" data-id="sand">
                         <div class="content">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
@@ -909,14 +909,14 @@
                                     <div class="swiper-slide">
                                         <img src="./asset/images/sand-thumb5.jpg" alt="sand5">
                                     </div>
-                                    <div class="pagination"></div>
-                                    <button class="btn-prev prev"><span class="blind">prev</span></button>
-                                    <button class="btn-next next"><span class="blind">next</span></button>
                                 </div>
+                                <div class="pagination"></div>
+                                <button class="btn-prev prev"><span class="blind">prev</span></button>
+                                <button class="btn-next next"><span class="blind">next</span></button>
                             </div>
                         </div>
                     </div>
-                    <div class="slide slide4 shell">
+                    <div class="slide slide4 shell" data-id="shell">
                         <div class="content">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
@@ -929,7 +929,7 @@
                     </div>
                 </div>
             </div>
-            <div class="group-flex16">
+            <div class="group-project">
                 <div class="title-area">
                     <strong class="sub-title">
                         Project masterplan
