@@ -151,7 +151,7 @@
 .sc-parking{
     .link-btn{
         width: 15vw;
-        height: 6vh;
+        height: 5vh;
         margin-top: 20px;
         font-size: 1.2vw;
         @include btn2;
@@ -159,8 +159,9 @@
 }
 .sc-apartments{
     .link-more{
-        width: 164px;
-        height: 40px;
+        width: 15vw;
+        height: 5vh;
+        font-size: 1.2vw;
         @include btn1;
         transition: all 0.3s;
         &:hover{
