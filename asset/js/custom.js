@@ -78,6 +78,19 @@ $(function(){
             $('.select-option').addClass('active');
         })
 
+
+        const swiper1 = new Swiper(".sc-benefits .swiper", {
+            effect: "fade",
+            navigation: {
+            nextEl: ".btn-next",
+            prevEl: ".btn-prev",
+            },
+            pagination: {
+            el: ".pagination",
+            type: 'fraction'
+            }
+         });
+         
         $('.select-option button').click(function(){
             data = {
                 nation:$(this).find('.country-name').text(),

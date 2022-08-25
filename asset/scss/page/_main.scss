@@ -453,26 +453,22 @@
 
 .sc-benefits{
     margin-top: 140px;
-}
-.group-flex6{
-    display: flex;
-    justify-content: space-between;
-    .column-right{
-        width: 75%;
-        margin-bottom: 100px;
-        .sub-title{
-            display: block;
-            width: 741px;
-            font-size: 40px;
-            line-height: 46px;
+    .group-title{
+        display: flex;
+        justify-content: space-between;
+        .column-right{
+            width: 75%;
+            margin-bottom: 100px;
+            .sub-title{
+                display: block;
+                width: 50vw;
+                font-size: 3vw;
+            }
         }
     }
-}
-.group-flex7{
-    border-top: 1px solid $color-gray2;
-    border-bottom: 1px solid $color-gray2;
-    & > *{
-        
+    .group-slide{
+        border-top: 1px solid $color-gray2;
+        border-bottom: 1px solid $color-gray2;
     }
 }
 .slide1{
@@ -482,31 +478,25 @@
     }
     .info-wrap{
         display: flex;
+        justify-content: flex-end;
         width: 54.727%;
-        padding: 20px 0;
-    }
-    .control{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 25.484%;
+        padding: 2vw 0;
     }
     .txt-box{
-        width: 74.516%;
-        padding: 0 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 74.516%;
+        padding: 0 30px;
+        background-color: $color-beige1;
         border-left: 1px solid $color-gray2;
     }
     .txt-tit{
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 2.5vw;
     }
     .desc{
         font-weight: 300;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 1.7vw;
     }
     .thumb-box{
         width: 45.273%;
@@ -517,10 +507,26 @@
             object-fit: cover;
         }
     }
+    .control{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 13.3vw;
+        height: 100%;
+        padding: 2vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pagination{
+        font-size: 1.6vw;
+    }
     button{
         display: inline-block;
-        width: 40px;
-        height: 40px;
+        width: 3vw;
+        height: 3vw;
+        cursor: pointer;
         &:disabled{
             opacity: 0.4;
         }
