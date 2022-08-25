@@ -11,6 +11,19 @@ $(function(){
     $('.btn-close').click(function(){
         $('.requset-area').removeClass('active');
     })
+
+    let lastScroll = 0;
+    $(window).scroll(function(){
+        curr = $(this).scrollTop();
+        here = $('.sc-about').offset().top;
+        console.log(here);
+
+        if(curr > here){
+            $(".header").addClass('active')
+        }else{
+            $(".header").removeClass('active')
+        }
+    })
     //1. 스케일
     gsap.to('.ani-area',1,{
         scale:1.1,

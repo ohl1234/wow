@@ -1,16 +1,30 @@
 .header{
     .right-area{
         .btn-requset{
+            @include btn3;
             width: 12vw;
             height: 3vw;
             font-size: 1vw;
             font-weight: 500;
-            @include btn3;
             transition: all 0.3s;
             &:hover{
                 background-color: $color-gray3;
             }
         }
+    }
+}
+.header{
+    &.active{
+        .btn-requset{
+            @include btn1;
+            &:hover{
+                background-color: $color-brown4;
+            }
+        }
+        .menu-bar{
+            background-color: $color-txt;
+        }
+        
     }
 }
 .gnb-header{
@@ -135,7 +149,7 @@
         bottom: 0.5vw;
         right: 0;
         display: block;
-        width: 200px;
+        width: 13vw;
         height: 3vw;
         padding: 0 15px;
         font-size: 1vw;
@@ -150,19 +164,23 @@
 }
 .sc-parking{
     .link-btn{
+        @include btn2;
         width: 15vw;
         height: 3vw;
         margin-top: 20px;
         font-size: 1.2vw;
-        @include btn2;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-gray3;
+        }
     }
 }
 .sc-apartments{
     .link-more{
+        @include btn1;
         width: 15vw;
         height: 3vw;
         font-size: 1.2vw;
-        @include btn1;
         transition: all 0.3s;
         &:hover{
             background-color: $color-brown4;
@@ -174,10 +192,10 @@
         position: absolute;
         bottom: 2vw;
         left: 2vw;
+        @include btn1;
         width: 13vw;
         height: 3vw;
         font-size: 1vw;
-        @include btn1;
         transition: all 0.3s;
         &:hover{
             background-color: $color-brown4;
@@ -196,5 +214,16 @@
         &:hover{
             background-color: $color-brown4;
         }
+    }
+}
+
+.footer{
+    .btn-requset{
+        @include btn1;
+        display: inline-block;
+        width: 13vw;
+        height: 3.5vw;
+        margin-top: 30px;
+        font-size: 1.2vw;
     }
 }
