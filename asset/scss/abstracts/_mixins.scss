@@ -66,9 +66,3 @@
     transition-duration: 3s;
 }
 
-
-@mixin laptop1 {
-    @media (min-width:1201px) and (max-width:1400px){
-        @content;
-    }
-}

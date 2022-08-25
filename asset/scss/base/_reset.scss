@@ -13,6 +13,9 @@ ul,ol{
 /*
     @세팅구역
 */
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: $font-en;
     font-weight: 400;
@@ -21,7 +24,6 @@ body {
     background-color: $color-beige1;
     width: 100%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

@@ -18,11 +18,24 @@ $(function(){
         here = $('.sc-about').offset().top;
         console.log(here);
 
-        if(curr > here){
+        if(curr >= here){
             $(".header").addClass('active')
         }else{
             $(".header").removeClass('active')
         }
+    })
+
+    $('.gnb-area a').click(function(){
+
+        const headerHeight = $('.header').outerHeight(); //header 의 높이 만큼 조절 하면 됨
+
+        $('html, body').animate({
+  
+            scrollTop: $( $.attr(this, 'href') ).offset().top - ( headerHeight + 15)
+  
+        }, 500);
+        menuActive.reverse();
+
     })
     //1. 스케일
     gsap.to('.ani-area',1,{
