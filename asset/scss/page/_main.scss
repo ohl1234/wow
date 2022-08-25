@@ -545,21 +545,19 @@
 }
 .sc-parking{
     margin: 140px 0;
-    & > div{
-        
+    .group-flex8{
+        //padding: 0 80px;
     }
 }
-.group-flex8{
-    //padding: 0 80px;
-}
-.parking-list{
+.group-card{
     display: flex;
     justify-content: space-around;
+    padding: 0 5vw;
 }
-.parking-item{
+.parking-card{
     position: relative;
-    width: 450px;
-    height: 500px;
+    width: 37vw;
+    height: 44vw;
     background-image: url(../images/benefits-thumb7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -571,8 +569,8 @@
         z-index: 3;
         display: inline-block;
         background-color: rgba(0, 0, 0, 0.3);
-        width: 450px;
-        height: 500px;
+        width: 100%;
+        height: 100%;
     }
     &:last-of-type{
         margin-top: 50px;
@@ -586,13 +584,13 @@
         padding: 30px;
         color: $color-white;
         .txt-tit{
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 1.8vw;
             text-transform: uppercase;
         }
         .desc{
+            font-size: 1.2vw;
+            line-height: 1.3;
             margin-top: 10px;
-            line-height: 19px;
         }
     }
 }

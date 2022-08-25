@@ -915,9 +915,10 @@ section + section {
 }
 
 .sc-parking .link-btn {
-  width: 191px;
-  height: 40px;
+  width: 15vw;
+  height: 6vh;
   margin-top: 20px;
+  font-size: 1.2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1549,20 +1550,21 @@ section + section {
 .sc-parking {
   margin: 140px 0;
 }
-.parking-list {
+.group-card {
   display: flex;
   justify-content: space-around;
+  padding: 0 5vw;
 }
 
-.parking-item {
+.parking-card {
   position: relative;
-  width: 450px;
-  height: 500px;
+  width: 37vw;
+  height: 44vw;
   background-image: url(../images/benefits-thumb7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parking-item::after {
+.parking-card::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1570,14 +1572,14 @@ section + section {
   z-index: 3;
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.3);
-  width: 450px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
-.parking-item:last-of-type {
+.parking-card:last-of-type {
   margin-top: 50px;
   background-image: url(../images/benefits-thumb8.jpg);
 }
-.parking-item .txt-box {
+.parking-card .txt-box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1585,14 +1587,14 @@ section + section {
   padding: 30px;
   color: #fff;
 }
-.parking-item .txt-box .txt-tit {
-  font-size: 20px;
-  line-height: 26px;
+.parking-card .txt-box .txt-tit {
+  font-size: 1.8vw;
   text-transform: uppercase;
 }
-.parking-item .txt-box .desc {
+.parking-card .txt-box .desc {
+  font-size: 1.2vw;
+  line-height: 1.3;
   margin-top: 10px;
-  line-height: 19px;
 }
 
 .group-flex9 {

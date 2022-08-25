@@ -150,9 +150,10 @@
 }
 .sc-parking{
     .link-btn{
-        width: 191px;
-        height: 40px;
+        width: 15vw;
+        height: 6vh;
         margin-top: 20px;
+        font-size: 1.2vw;
         @include btn2;
     }
 }
