@@ -997,7 +997,7 @@ section + section {
 }
 
 .sc-title {
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   line-height: 19px;
   background-position: center center;
   border-color: transparent;
@@ -1583,7 +1583,7 @@ section + section {
   bottom: 0;
   left: 0;
   z-index: 4;
-  padding: 30px;
+  padding: 2vw;
   color: #fff;
 }
 .sc-parking .parking-card .txt-box .txt-tit {
@@ -1675,55 +1675,59 @@ section + section {
   margin: 140px 0 100px;
   color: #fff;
 }
-
-.group-flex11 {
+.sc-infrastructure .group-title {
   position: absolute;
   top: 45px;
   left: 85px;
   z-index: 3;
 }
-.group-flex11 .sub-title {
+.sc-infrastructure .group-title .sub-title {
   display: inline-block;
-  width: 500px;
-  margin: 20px 0;
+  width: 30vw;
+  margin: 40px 0;
   font-size: 40px;
-  line-height: 46px;
+  line-height: 1.3;
 }
-.group-flex11 .tab-list {
+.sc-infrastructure .group-title .tab-list {
   display: flex;
 }
-.group-flex11 .tab-item {
+.sc-infrastructure .group-title .tab-item {
   opacity: 0.4;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.4vw;
 }
-.group-flex11 .tab-item.swiper-pagination-bullet {
+.sc-infrastructure .group-title .tab-item.swiper-pagination-bullet {
   margin: 0;
   width: auto;
   height: auto;
   background: none;
 }
-.group-flex11 .tab-item.swiper-pagination-bullet-active {
+.sc-infrastructure .group-title .tab-item.swiper-pagination-bullet::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+}
+.sc-infrastructure .group-title .tab-item.swiper-pagination-bullet-active {
   opacity: 1;
 }
-.group-flex11 .tab-item + a {
+.sc-infrastructure .group-title .tab-item.swiper-pagination-bullet-active::after {
+  opacity: 1;
+}
+.sc-infrastructure .group-title .tab-item.swiper-pagination-bullet + a {
   margin-left: 30px;
 }
-.group-flex11 .tab-item:active {
-  opacity: 1;
+.sc-infrastructure .group-title .tab-item + a {
+  margin-left: 30px;
 }
-
-.group-flex12 {
-  width: 100%;
-  height: 740px;
-}
-
 .slide2 {
   width: 100%;
   height: 100%;
 }
 .slide2 .swiper-slide {
-  height: 740px;
+  height: 50vw;
 }
 .slide2 .swiper-slide img {
   width: 100%;

@@ -104,15 +104,19 @@ $(function(){
         })
 
         slide7Arr = ['Dream Island','Kolomenskoye','CSKA Arena','Riviera Mall']
-        const swiper = new Swiper(".sc-infrastructure .swiper", {
-          pagination: {
-            el: ".sc-infrastructure .tab-list",
-            clickable: true,
-            renderBullet: function (index, className) {
-              //return '<span class="' + className + '">' + (index + 1) + "</span>";
-              return `<a href="#" class="tab-item ${className}">${slide7Arr[index]}</a>`;
-            },
-          },
+        const swiper2 = new Swiper(".sc-infrastructure .swiper", {
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+              },
+            pagination: {
+                el: ".sc-infrastructure .tab-list",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    //return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    return `<a href="#" class="tab-item ${className}">${slide7Arr[index]}</a>`;
+                }
+            }
         });
 
         $('.ic-plus').hover(function(){
