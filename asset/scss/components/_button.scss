@@ -187,9 +187,11 @@
 .purchase-area{
     .btn-send{
         @include btn1;
+        align-self: flex-start;
         width: 100%;
-        height: 40px;
-        margin-top: 76px;
+        height: 3.5vw;
+        margin-top: 8vw;
+        font-size: 1.1vw;
         transition: all 0.3s;
         &:hover{
             background-color: $color-brown4;

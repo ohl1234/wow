@@ -138,7 +138,17 @@ $(function(){
           el: ".pagination",
           clickable: true,
         },
-      });
+    });
+    const swiper5 = new Swiper(".sc-gallery .swiper", {
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+        pagination: {
+          el: ".pagination",
+          clickable: true,
+        },
+    });
 
     $('.ic-plus').hover(function(){
         $('.info-hover').removeClass('active')
