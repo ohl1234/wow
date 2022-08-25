@@ -1550,13 +1550,12 @@ section + section {
 .sc-parking {
   margin: 140px 0;
 }
-.group-card {
+.sc-parking .group-card {
   display: flex;
   justify-content: space-around;
   padding: 0 5vw;
 }
-
-.parking-card {
+.sc-parking .parking-card {
   position: relative;
   width: 37vw;
   height: 44vw;
@@ -1564,7 +1563,7 @@ section + section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parking-card::after {
+.sc-parking .parking-card::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1575,11 +1574,11 @@ section + section {
   width: 100%;
   height: 100%;
 }
-.parking-card:last-of-type {
+.sc-parking .parking-card:last-of-type {
   margin-top: 50px;
   background-image: url(../images/benefits-thumb8.jpg);
 }
-.parking-card .txt-box {
+.sc-parking .parking-card .txt-box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1587,87 +1586,88 @@ section + section {
   padding: 30px;
   color: #fff;
 }
-.parking-card .txt-box .txt-tit {
+.sc-parking .parking-card .txt-box .txt-tit {
   font-size: 1.8vw;
   text-transform: uppercase;
 }
-.parking-card .txt-box .desc {
+.sc-parking .parking-card .txt-box .desc {
   font-size: 1.2vw;
   line-height: 1.3;
   margin-top: 10px;
 }
 
-.group-flex9 {
+.sc-storage .group-title {
   margin-bottom: 50px;
 }
-.group-flex10 {
+.sc-storage .group-list {
   display: flex;
   border-top: 1px solid #c6c0ba;
   border-bottom: 1px solid #c6c0ba;
 }
-.group-flex10 > div {
-  height: 480px;
+.sc-storage .group-list > div {
+  height: 36vw;
 }
-.group-flex10 .column-left {
+.sc-storage .group-list .column-left {
   position: relative;
   overflow: hidden;
-  width: 60%;
+  width: 50%;
 }
-.group-flex10 .column-left .thumb-box {
+.sc-storage .group-list .column-left .thumb-box {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.group-flex10 .column-left .thumb-box + div {
+.sc-storage .group-list .column-left .thumb-box + div {
   top: -100%;
 }
-.group-flex10 .column-left .thumb-box.active {
+.sc-storage .group-list .column-left .thumb-box.active {
   top: 0;
   transition: 1s;
 }
-.group-flex10 .column-left .thumb-box.hide {
+.sc-storage .group-list .column-left .thumb-box.hide {
   top: 100%;
   transition: 1s;
 }
-.group-flex10 .column-left img {
+.sc-storage .group-list .column-left img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.group-flex10 .column-right {
+.sc-storage .group-list .column-right {
   position: relative;
-  width: 40%;
+  width: 50%;
   padding-left: 30px;
 }
-.group-flex10 .column-right .storage-list {
+.sc-storage .group-list .column-right .storage-list {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.group-flex10 .column-right .storage-item {
+.sc-storage .group-list .column-right .storage-item {
   display: flex;
   align-items: center;
   height: 16.6666666667%;
   border-bottom: 1px solid #c6c0ba;
 }
-.group-flex10 .column-right .storage-item :hover > * {
+.sc-storage .group-list .column-right .storage-item :hover > * {
   opacity: 0.4;
 }
-.group-flex10 .column-right .storage-item:last-of-type {
+.sc-storage .group-list .column-right .storage-item:last-of-type {
   border-bottom: none;
 }
-.group-flex10 .column-right .txt-tit {
-  font-size: 20px;
+.sc-storage .group-list .column-right .txt-tit {
+  font-size: 1.3vw;
   line-height: 24px;
 }
-.group-flex10 .column-right .desc {
+.sc-storage .group-list .column-right .desc {
   display: block;
-  margin-top: 6px;
-  color: #7c7267;
+  margin-top: 10px;
+  font-size: 1.1vw;
   font-weight: 300;
+  color: #7c7267;
 }
 
 .sc-infrastructure {
