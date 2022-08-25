@@ -761,7 +761,7 @@ section + section {
 }
 
 .header .right-area .btn-requset {
-  width: 10vw;
+  width: 12vw;
   height: 3vw;
   font-size: 1vw;
   font-weight: 500;
@@ -781,7 +781,7 @@ section + section {
 }
 
 .gnb-header .right-area .btn-requset {
-  width: 170px;
+  width: 12vw;
   height: 3vw;
   font-size: 1vw;
   font-weight: 500;
@@ -2042,17 +2042,26 @@ section + section {
 .sc-finishing .group-project .info-hover.active::after {
   opacity: 1;
 }
+.sc-finishing .group-project .info1 {
+  z-index: 5;
+}
 .sc-finishing .group-project .info1 .info-hover::after {
   transition: all 0.5s;
   background-image: url(../images/project-dim1.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.sc-finishing .group-project .info2 {
+  z-index: 4;
+}
 .sc-finishing .group-project .info2 .info-hover::after {
   transition: all 0.5s;
   background-image: url(../images/project-dim2.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.sc-finishing .group-project .info3 {
+  z-index: 3;
 }
 .sc-finishing .group-project .info3 .info-hover::after {
   transition: all 0.5s;
@@ -2065,7 +2074,7 @@ section + section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
+  z-index: 1;
   display: inline-block;
   width: 36px;
   height: 36px;
@@ -2078,7 +2087,7 @@ section + section {
   top: 50%;
   left: calc(50% + 30px);
   transform: translateY(-50%);
-  z-index: 4;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2087,70 +2096,65 @@ section + section {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transition: opacity 0.3s;
+  visibility: hidden;
 }
 .sc-finishing .group-project .info-box.active {
-  opacity: 1;
+  visibility: visible;
 }
 
-.group-flex17 {
+.sc-developer .group-ani {
   position: relative;
   height: 120px;
   margin-bottom: 200px;
 }
-.group-flex17 .tit-ani {
+.sc-developer .group-ani .tit-ani {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 120px;
+  font-size: 9vw;
   white-space: nowrap;
 }
-
-.group-flex18 .sub-title {
+.sc-developer .group-about .sub-title {
   display: block;
   width: 60%;
   margin-top: 20px;
   font-weight: 300;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 3vw;
   text-transform: capitalize;
 }
-.group-flex18 .group-map {
+.sc-developer .group-about .group-map {
   display: flex;
   margin-top: 50px;
 }
-.group-flex18 .column-left {
-  width: 736px;
-  height: 382px;
+.sc-developer .group-about .column-left {
+  width: 60vw;
+  height: 30vw;
 }
-.group-flex18 .column-left .thumb-box {
+.sc-developer .group-about .column-left .thumb-box {
   height: 100%;
 }
-.group-flex18 .column-left .thumb-box img {
+.sc-developer .group-about .column-left .thumb-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.group-flex18 .column-right {
-  width: 30%;
+.sc-developer .group-about .column-right {
+  width: calc(100% - 60vw);
   align-self: flex-end;
   padding: 0 30px;
 }
-.group-flex18 .column-right .txt-box {
-  font-size: 18px;
-  line-height: 23px;
+.sc-developer .group-about .column-right .txt-box {
+  font-size: 1.6vw;
 }
-.group-flex18 .column-right .desc {
-  margin-bottom: 20px;
+.sc-developer .group-about .column-right .desc {
+  margin-bottom: 40px;
 }
-.group-flex18 .column-right .link-btn {
+.sc-developer .group-about .column-right .link-btn {
   display: block;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.2vw;
 }
-.group-flex18 .column-right .link-btn::before {
+.sc-developer .group-about .column-right .link-btn::before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -2160,37 +2164,35 @@ section + section {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.group-flex18 .column-right .building::before {
+.sc-developer .group-about .column-right .building::before {
   background-image: url(../images/building.svg);
 }
-.group-flex18 .column-right .document {
-  margin-top: 10px;
+.sc-developer .group-about .column-right .document {
+  margin-top: 20px;
 }
-.group-flex18 .column-right .document::before {
+.sc-developer .group-about .column-right .document::before {
   background-image: url(../images/document.svg);
 }
-
-.group-flex19 {
+.sc-developer .group-team {
   margin: 100px 0;
 }
-.group-flex19 .sub-title {
-  font-size: 32px;
-  line-height: 38px;
+.sc-developer .group-team .sub-title {
+  font-size: 3vw;
   text-transform: capitalize;
 }
-.group-flex19 .team-list {
-  padding: 20px 0;
+.sc-developer .group-team .team-list {
+  padding: 40px 0;
   display: flex;
   justify-content: center;
 }
-.group-flex19 .team-item {
+.sc-developer .group-team .team-item {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 25%;
   height: 160px;
 }
-.group-flex19 .team-item + li {
+.sc-developer .group-team .team-item + li {
   border-left: 1px solid #c6c0ba;
 }
 
