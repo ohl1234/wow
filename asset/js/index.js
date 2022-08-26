@@ -213,6 +213,11 @@ $(function(){
     });
 
     // sc-storage 슬라이드 추후에 진행
+    $('.sc-storage .thumb-box').eq(0).addClass('active')
+    $('.sc-storage .storage-item').mouseenter(function(){
+        idx = $(this).index();
+        $('.sc-storage .thumb-box').siblings().removeClass('active').eq(idx).addClass('active')
+    })
 
 
     /**

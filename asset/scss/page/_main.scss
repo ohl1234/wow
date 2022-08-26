@@ -617,21 +617,45 @@
             }
             .thumb-box{
                 position: absolute;
+                top:0;
                 left: 0;
                 z-index: 100;
                 width: 100%;
                 height: 100%;
+                opacity: 0;
                 &.active{
-                    top: 0;
-                    transition: top 0.4s;
+                    opacity: 1;
+                    transition: all 0.8s;
                 }
-                &.hide{
-                    top: 100%;
-                    transition: top 0.4s;
+                // &.active{
+                //     top: 0;
+                //     transition: top 0.4s;
+                // }
+                // &.hide{
+                //     top: 100%;
+                //     transition: top 0.4s;
 
+                // }
+                // & + div{
+                //     top: -100%;
+                // }
+                &.concierge{
+                    z-index: 1;
                 }
-                & + div{
-                    top: -100%;
+                &.kids{
+                    z-index: 2;
+                }
+                &.coworking{
+                    z-index: 3;
+                }
+                &.delivery{
+                    z-index: 4;
+                }
+                &.fireplace{
+                    z-index: 5;
+                }
+                &.cafe{
+                    z-index: 6;
                 }
             }
             img{

@@ -1685,21 +1685,34 @@ section + section {
 }
 .sc-storage .group-list .column-left .thumb-box {
   position: absolute;
+  top: 0;
   left: 0;
   z-index: 100;
   width: 100%;
   height: 100%;
+  opacity: 0;
 }
 .sc-storage .group-list .column-left .thumb-box.active {
-  top: 0;
-  transition: top 0.4s;
+  opacity: 1;
+  transition: all 0.8s;
 }
-.sc-storage .group-list .column-left .thumb-box.hide {
-  top: 100%;
-  transition: top 0.4s;
+.sc-storage .group-list .column-left .thumb-box.concierge {
+  z-index: 1;
 }
-.sc-storage .group-list .column-left .thumb-box + div {
-  top: -100%;
+.sc-storage .group-list .column-left .thumb-box.kids {
+  z-index: 2;
+}
+.sc-storage .group-list .column-left .thumb-box.coworking {
+  z-index: 3;
+}
+.sc-storage .group-list .column-left .thumb-box.delivery {
+  z-index: 4;
+}
+.sc-storage .group-list .column-left .thumb-box.fireplace {
+  z-index: 5;
+}
+.sc-storage .group-list .column-left .thumb-box.cafe {
+  z-index: 6;
 }
 .sc-storage .group-list .column-left img {
   width: 100%;
