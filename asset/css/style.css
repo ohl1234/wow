@@ -100,7 +100,7 @@ body {
   color: #5f5348;
   font-size: 14px;
   background-color: #ecebe4;
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -496,7 +496,7 @@ section + section {
   font-size: 16px;
   cursor: pointer;
 }
-.requset-area .select-flag, .requset-area .option-flag {
+.requset-area .select-flag i {
   display: block;
   width: 18px;
   min-width: 18px;
@@ -506,6 +506,21 @@ section + section {
   background-position: -285px -281px;
   background-color: #c5c5c5;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.requset-area .select-flag i.canada {
+  background-position: -145px -51px;
+}
+.requset-area .select-flag i.china {
+  background-position: -61px -74px;
+}
+.requset-area .select-flag i.france {
+  background-position: -33px -120px;
+}
+.requset-area .select-flag i.japan {
+  background-position: -145px -166px;
+}
+.requset-area .select-flag i.korea {
+  background-position: -33px -189px;
 }
 .requset-area .select-option {
   display: none;
@@ -533,26 +548,35 @@ section + section {
 .requset-area .btn-option:hover {
   background-color: #eee;
 }
-.requset-area .btn-option .canada {
-  background-position: -145px -51px;
-}
-.requset-area .btn-option .china {
-  background-position: -61px -74px;
-}
-.requset-area .btn-option .france {
-  background-position: -33px -120px;
-}
-.requset-area .btn-option .japan {
-  background-position: -145px -166px;
-}
-.requset-area .btn-option .korea {
-  background-position: -33px -189px;
-}
 .requset-area .option-box {
   display: flex;
 }
 .requset-area .option-flag {
+  display: block;
+  width: 18px;
+  min-width: 18px;
+  height: 13px;
   margin-left: 8px;
+  background-image: url(../images/sc-flag-bg.png);
+  background-repeat: no-repeat;
+  background-position: -285px -281px;
+  background-color: #c5c5c5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.requset-area .option-flag.canada {
+  background-position: -145px -51px;
+}
+.requset-area .option-flag.china {
+  background-position: -61px -74px;
+}
+.requset-area .option-flag.france {
+  background-position: -33px -120px;
+}
+.requset-area .option-flag.japan {
+  background-position: -145px -166px;
+}
+.requset-area .option-flag.korea {
+  background-position: -33px -189px;
 }
 .requset-area .select-arrow {
   margin-left: 6px;
@@ -1652,23 +1676,30 @@ section + section {
   overflow: hidden;
   width: 50%;
 }
-.sc-storage .group-list .column-left .thumb-box {
+.sc-storage .group-list .column-left .storage-list {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.sc-storage .group-list .column-left .thumb-box + div {
-  top: -100%;
+.sc-storage .group-list .column-left .thumb-box {
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
 }
 .sc-storage .group-list .column-left .thumb-box.active {
   top: 0;
-  transition: 1s;
+  transition: top 0.4s;
 }
 .sc-storage .group-list .column-left .thumb-box.hide {
   top: 100%;
-  transition: 1s;
+  transition: top 0.4s;
+}
+.sc-storage .group-list .column-left .thumb-box + div {
+  top: -100%;
 }
 .sc-storage .group-list .column-left img {
   width: 100%;
@@ -2366,7 +2397,7 @@ section + section {
   font-size: 16px;
   cursor: pointer;
 }
-.sc-payment .group-pay .purchase-area .select-flag, .sc-payment .group-pay .purchase-area .option-flag {
+.sc-payment .group-pay .purchase-area .select-flag i {
   display: block;
   width: 18px;
   min-width: 18px;
@@ -2378,6 +2409,21 @@ section + section {
   background-position: -285px -281px;
   background-color: #c5c5c5;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.sc-payment .group-pay .purchase-area .select-flag i.canada {
+  background-position: -145px -51px;
+}
+.sc-payment .group-pay .purchase-area .select-flag i.china {
+  background-position: -61px -74px;
+}
+.sc-payment .group-pay .purchase-area .select-flag i.france {
+  background-position: -33px -120px;
+}
+.sc-payment .group-pay .purchase-area .select-flag i.japan {
+  background-position: -145px -166px;
+}
+.sc-payment .group-pay .purchase-area .select-flag i.korea {
+  background-position: -33px -189px;
 }
 .sc-payment .group-pay .purchase-area .select-option {
   display: none;
@@ -2393,6 +2439,9 @@ section + section {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
 }
+.sc-payment .group-pay .purchase-area .select-option.active {
+  display: block;
+}
 .sc-payment .group-pay .purchase-area .btn-option {
   display: flex;
   justify-content: space-between;
@@ -2402,26 +2451,37 @@ section + section {
 .sc-payment .group-pay .purchase-area .btn-option:hover {
   background-color: #eee;
 }
-.sc-payment .group-pay .purchase-area .btn-option.canada {
-  background-position: -145px -51px;
-}
-.sc-payment .group-pay .purchase-area .btn-option.china {
-  background-position: -61px -74px;
-}
-.sc-payment .group-pay .purchase-area .btn-option.france {
-  background-position: -33px -120px;
-}
-.sc-payment .group-pay .purchase-area .btn-option.japan {
-  background-position: -145px -166px;
-}
-.sc-payment .group-pay .purchase-area .btn-option.korea {
-  background-position: -33px -189px;
-}
 .sc-payment .group-pay .purchase-area .option-box {
   display: flex;
 }
 .sc-payment .group-pay .purchase-area .option-flag {
+  display: block;
+  width: 18px;
+  min-width: 18px;
+  height: 13px;
   margin-left: 8px;
+  transform: scale(1.3);
+  transform-origin: left center;
+  background-image: url(../images/sc-flag-bg.png);
+  background-repeat: no-repeat;
+  background-position: -285px -281px;
+  background-color: #c5c5c5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.sc-payment .group-pay .purchase-area .option-flag.canada {
+  background-position: -145px -51px;
+}
+.sc-payment .group-pay .purchase-area .option-flag.china {
+  background-position: -61px -74px;
+}
+.sc-payment .group-pay .purchase-area .option-flag.france {
+  background-position: -33px -120px;
+}
+.sc-payment .group-pay .purchase-area .option-flag.japan {
+  background-position: -145px -166px;
+}
+.sc-payment .group-pay .purchase-area .option-flag.korea {
+  background-position: -33px -189px;
 }
 .sc-payment .group-pay .purchase-area .select-arrow {
   margin-left: 15px;

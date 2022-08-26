@@ -608,22 +608,30 @@
             position: relative;
             overflow: hidden;
             width: 50%;
-            .thumb-box{
+            .storage-list{
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                & + div{
-                    top: -100%;
-                }
+            }
+            .thumb-box{
+                position: absolute;
+                left: 0;
+                z-index: 100;
+                width: 100%;
+                height: 100%;
                 &.active{
                     top: 0;
-                    transition: 1s;
+                    transition: top 0.4s;
                 }
                 &.hide{
                     top: 100%;
-                    transition: 1s;
+                    transition: top 0.4s;
+
+                }
+                & + div{
+                    top: -100%;
                 }
             }
             img{
@@ -1353,18 +1361,35 @@
                 font-size: 16px;
                 cursor: pointer;
             }
-            .select-flag,.option-flag{
-                display: block;
-                width: 18px;
-                min-width: 18px;
-                height: 13px;
-                transform: scale(1.3);
-                transform-origin: left center;
-                @include flag-Img;
-                background-position: -285px -281px;
-                background-color: $color-gray3;
-                -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
-                box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+            .select-flag{
+                i{
+                    display: block;
+                    width: 18px;
+                    min-width: 18px;
+                    height: 13px;
+                    transform: scale(1.3);
+                    transform-origin: left center;
+                    @include flag-Img;
+                    background-position: -285px -281px;
+                    background-color: $color-gray3;
+                    -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+                    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+                    &.canada{
+                        background-position: -145px -51px;
+                    }
+                    &.china{
+                        background-position: -61px -74px;
+                    }
+                    &.france{
+                        background-position: -33px -120px;
+                    }
+                    &.japan{
+                        background-position: -145px -166px;
+                    }
+                    &.korea{
+                        background-position: -33px -189px;
+                    }
+                }
             }
             .select-option{
                 display: none;
@@ -1380,6 +1405,9 @@
                 -webkit-box-shadow: 0 0 1px rgb(0 0 0 / 10%);
                 box-shadow: 0 0 1px rgb(0 0 0 / 10%);
                 overflow-y: scroll;
+                &.active{
+                    display: block;
+                }
             }
             .btn-option{
                 display: flex;
@@ -1389,6 +1417,23 @@
                 &:hover{
                     background-color: $color-gray5;
                 }
+            }
+            .option-box{
+                display: flex;
+            }
+            .option-flag{
+                display: block;
+                width: 18px;
+                min-width: 18px;
+                height: 13px;
+                margin-left: 8px;
+                transform: scale(1.3);
+                transform-origin: left center;
+                @include flag-Img;
+                background-position: -285px -281px;
+                background-color: $color-gray3;
+                -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+                box-shadow: 0 0 5px rgb(0 0 0 / 30%);
                 &.canada{
                     background-position: -145px -51px;
                 }
@@ -1404,12 +1449,6 @@
                 &.korea{
                     background-position: -33px -189px;
                 }
-            }
-            .option-box{
-                display: flex;
-            }
-            .option-flag{
-                margin-left: 8px;
             }
             .select-arrow{
                 margin-left: 15px;
