@@ -288,8 +288,7 @@ section + section {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 40vw;
+  width: 100vw;
   z-index: 1000;
   background-color: #ecebe4;
   color: #5f5348;
@@ -311,20 +310,23 @@ section + section {
 .gnb-area .thumb1, .gnb-area .thumb2 {
   position: absolute;
   top: 50%;
-  left: 43%;
-  transform: translate(-48%, -50%) scale(1.08);
-  transform-origin: center center;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .gnb-area .thumb1 {
-  width: 384px;
-  height: 372px;
+  width: 29vw;
+  height: 29vw;
   background-image: url(../images/gnb-thumb1.svg);
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
+  border-color: transparent;
+  border-style: solid;
   z-index: 4;
 }
 .gnb-area .thumb2 {
-  width: 200px;
-  height: 250px;
+  width: 17vw;
+  height: 20vw;
   background-image: url(../images/gnb-thumb2.jpg);
   background-repeat: no-repeat;
   border-radius: 4000px;
@@ -347,7 +349,7 @@ section + section {
 .gnb-area .gnb-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 18px;
+  row-gap: 2vw;
 }
 .gnb-area .gnb-item {
   width: 50%;
@@ -399,7 +401,7 @@ section + section {
 }
 .gnb-area .info-tit {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #9d958c;
 }
 .gnb-area .info-list {
@@ -830,7 +832,7 @@ section + section {
 .gnb-area .btn-close .bar-wrap {
   height: 15px;
   margin-right: 3px;
-  vertical-align: -3px;
+  vertical-align: middle;
 }
 .gnb-area .btn-close i {
   display: inline-block;
@@ -1135,7 +1137,7 @@ section + section {
   background-size: cover;
 }
 .sc-about .group-map {
-  height: 64vh;
+  height: 40vw;
   background-image: url(../images/about-map.svg);
   background-repeat: no-repeat;
   background-position: top right;
@@ -1769,8 +1771,10 @@ section + section {
   height: 50vw;
 }
 .slide2 .swiper-slide img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: -10%;
+  width: 110%;
+  height: 110%;
 }
 
 .sc-apartments {
@@ -2020,6 +2024,9 @@ section + section {
   right: 20px;
   background-image: url(../images/next.svg);
 }
+.sc-finishing .group-project .project-area {
+  height: 40vw;
+}
 .sc-finishing .group-project .sub-title {
   font-size: 3vw;
   text-transform: capitalize;
@@ -2146,7 +2153,7 @@ section + section {
 .sc-developer .group-ani .tit-ani {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 100%;
   font-size: 9vw;
   white-space: nowrap;
 }

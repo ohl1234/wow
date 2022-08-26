@@ -83,7 +83,7 @@
         }
     }
     .group-map{
-        height: 64vh;
+        height: 40vw;
         background-image: url(../images/about-map.svg);
         background-repeat: no-repeat;
         background-position: top right;
@@ -730,8 +730,10 @@
         &-slide{
             height: 50vw;
             img{
-                width: 100%;
-                height: 100%;
+                position: absolute;
+                top: -10%;
+                width: 110%;
+                height: 110%;
             }
         }
     }
@@ -993,6 +995,9 @@
         }
     }
     .group-project{
+        .project-area{
+            height: 40vw;
+        }
         .sub-title{
             font-size: 3vw;
             text-transform: capitalize;
@@ -1123,7 +1128,8 @@
         .tit-ani{
             position: absolute;
             top: 0;
-            left: 0;
+            left: 100%;
+            //transform: translateX(100%);
             font-size: 9vw;
             white-space: nowrap;
         }

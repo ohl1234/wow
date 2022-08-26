@@ -51,7 +51,7 @@ $(function(){
             start:"top top",
             end:"bottom top",
             scrub:1,
-            markers:true
+            //markers:true
         },
         scale:1.15
     })
@@ -93,13 +93,54 @@ $(function(){
                 trigger:el,
                 start:"top 80%",
                 end:"bottom top",
-                markers:true
+                //markers:true
             },
             stagger:0.1,
             yPercent:30,
-            opacity:0
+            opacity:0,
+            duration:0.7
         })
     })
+
+    gsap.from('.sc-infrastructure img',{
+        scrollTrigger:{
+            trigger:".sc-infrastructure",
+            start:"top 80%",
+            end:"bottom top",
+            scrub:1
+        },
+        yPercent: 10
+    })
+
+    const layoutAni = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.sc-apartments',
+            start:"top 80%",
+            end:"bottom top",
+            duration: 1,
+            scrub:1
+        }
+    })
+    layoutAni.addLabel('a')
+    .from('.sc-apartments .wrap1',{yPercent:40},'a')
+    .from('.sc-apartments .wrap2',{ yPercent:-40},'a')
+
+
+
+    gsap.to('.sc-developer .tit-ani',{
+        scrollTrigger:{
+            trigger:".group-project .project-area",
+            start:"top 30%",
+            end:"bottom top",
+            //markers:true,
+            scrub:1,
+            duration:1.5
+        },
+        xPercent:-100
+    })
+    
+
+
     $('.selection').click(function(){
         $('.select-option').addClass('active');
     })
