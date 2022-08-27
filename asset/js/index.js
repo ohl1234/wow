@@ -28,6 +28,11 @@ $(function(){
     });
     $('.requset-area .btn-close').click(function(){
         $('.requset-area').removeClass('active');
+
+        $('.requset-area .selection .blind').text('Russia');
+        $('.requset-area .selection .select-flag i').addClass('russia');
+        $('.requset-area .selection .select-code').text('+7');
+        $('.requset-area .select-option').removeClass('active');
     });
 
     gsap.set('.gnb-area',{
@@ -153,7 +158,7 @@ $(function(){
         }
 
         $('.requset-area .selection .blind').text(data.nation);
-        $('.requset-area .selection .select-flag i').addClass(data.flag);
+        $('.requset-area .selection .select-flag i').removeClass().addClass(data.flag);
         $('.requset-area .selection .select-code').text(data.code);
         $('.requset-area .select-option').removeClass('active');
     });
@@ -171,7 +176,7 @@ $(function(){
         }
 
         $('.sc-location .selection .blind').text(data.nation);
-        $('.sc-location .selection .select-flag i').addClass(data.flag);
+        $('.sc-location .selection .select-flag i').removeClass().addClass(data.flag);
         $('.sc-location .selection .select-code').text(data.code);
         $('.sc-location .select-option').removeClass('active');
     });
@@ -189,7 +194,7 @@ $(function(){
         }
 
         $('.sc-payment .selection .blind').text(data.nation);
-        $('.sc-payment .selection .select-flag i').addClass(data.flag);
+        $('.sc-payment .selection .select-flag i').removeClass().addClass(data.flag);
         $('.sc-payment .selection .select-code').text(data.code);
         $('.sc-payment .select-option').removeClass('active');
     });

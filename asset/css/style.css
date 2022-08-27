@@ -519,6 +519,9 @@ section + section {
 .requset-area .select-flag i.japan {
   background-position: -145px -166px;
 }
+.requset-area .select-flag i.russia {
+  background-position: -285px -281px;
+}
 .requset-area .select-flag i.korea {
   background-position: -33px -189px;
 }
@@ -1408,6 +1411,9 @@ section + section {
 .sc-location .select-flag i.japan {
   background-position: -145px -166px;
 }
+.sc-location .select-flag i.russia {
+  background-position: -285px -281px;
+}
 .sc-location .select-flag i.korea {
   background-position: -33px -189px;
 }
@@ -1449,6 +1455,9 @@ section + section {
 .sc-location .btn-option.japan {
   background-position: -145px -166px;
 }
+.sc-location .btn-option.russia {
+  background-position: -285px -281px;
+}
 .sc-location .btn-option.korea {
   background-position: -33px -189px;
 }
@@ -1478,6 +1487,9 @@ section + section {
 }
 .sc-location .option-flag.japan {
   background-position: -145px -166px;
+}
+.sc-location .option-flag.russia {
+  background-position: -285px -281px;
 }
 .sc-location .option-flag.korea {
   background-position: -33px -189px;
@@ -2435,6 +2447,9 @@ section + section {
 .sc-payment .group-pay .purchase-area .select-flag i.japan {
   background-position: -145px -166px;
 }
+.sc-payment .group-pay .purchase-area .select-flag i.russia {
+  background-position: -285px -281px;
+}
 .sc-payment .group-pay .purchase-area .select-flag i.korea {
   background-position: -33px -189px;
 }
@@ -2492,6 +2507,9 @@ section + section {
 }
 .sc-payment .group-pay .purchase-area .option-flag.japan {
   background-position: -145px -166px;
+}
+.sc-payment .group-pay .purchase-area .option-flag.russia {
+  background-position: -285px -281px;
 }
 .sc-payment .group-pay .purchase-area .option-flag.korea {
   background-position: -33px -189px;
