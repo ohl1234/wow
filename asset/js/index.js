@@ -217,7 +217,6 @@ $(function(){
         $('[data-id='+target+']').addClass('active').siblings().removeClass('active');
     });
 
-    // sc-storage 슬라이드 추후에 진행
     $('.sc-storage .thumb-box').eq(0).addClass('active')
     $('.sc-storage .storage-item').mouseenter(function(){
         idx = $(this).index();
@@ -229,16 +228,16 @@ $(function(){
      *  3. swiper-slide event
      */
 
-     const swiper1 = new Swiper(".sc-benefits .swiper", {
-        effect: "fade",
-        navigation: {
-            nextEl: ".btn-next",
-            prevEl: ".btn-prev",
-            },
-            pagination: {
-            el: ".pagination",
-            type: 'fraction'
-            }
+    const swiper1 = new Swiper(".sc-benefits .swiper", {
+    effect: "fade",
+    navigation: {
+        nextEl: ".next1",
+        prevEl: ".prev1",
+        },
+        pagination: {
+        el: ".pagination",
+        type: 'fraction'
+        }
     });
 
     slide7Arr = ['Dream Island','Kolomenskoye','CSKA Arena','Riviera Mall']
@@ -260,8 +259,8 @@ $(function(){
         slidesPerView: "auto",
         spaceBetween: 30,
         navigation: {
-        nextEl: ".btn-next",
-        prevEl: ".btn-prev",
+        nextEl: ".next2",
+        prevEl: ".prev2",
         }
     });
 
